@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<sim>
+  <model>
+    <livery>
+      <name type="string">Test</name>
+      <texture>Liveries/Test1.rgb</texture>
+    </livery>
+    <fairings>
+      <texture>Liveries/Test2.rgb</texture>
+    </fairings>
+    <rudders>
+      <texture>Liveries/Test3.rgb</texture>
+    </rudders>
+  </model>
+</sim>
+</PropertyList>

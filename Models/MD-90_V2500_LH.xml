@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<!-- McDonnell Douglas MD-90 -->
+
+<PropertyList> 
+
+<path>mesh_V2500_LH.ac</path> <params>
+		<reverser-pos-norm>engines/engine[0]/reverser-pos-norm</reverser-pos-norm>
+	</params>
+
+	<!-- Reverse thrust animation -->
+	<animation>
+		<type>translate</type>
+		<object-name>Reverser</object-name>
+		<object-name>Nozzle</object-name>
+		<property>surface-positions/reverser-norm[0]</property>
+		<factor>0.25</factor>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!-- Chrome shader -->
+	<animation>
+		<name>Chrome shader</name>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>chrome.png</texture>
+		<object-name>Nozzle</object-name>
+	</animation>
+
+	<!-- LIVERY SELECT -->  <!-- Nasal code -->
+	<nasal>
+		<load>
+		 var livery_update = aircraft.livery_update.new("Aircraft/MD-90/Models/Liveries");
+		</load>
+		<unload>
+		 livery_update.stop();
+		</unload>
+	</nasal>
+
+	<!-- Animation -->
+	<animation>
+		<type>material</type>
+		<object-name>Intake</object-name>
+		<object-name>Nacelle</object-name>
+		<object-name>Reverser</object-name>
+		<property-base>sim/model/rudders</property-base>
+
+		<texture>txt_vstab_engines.rgb</texture>
+	</animation>
+
+		<animation> <name>Fan</name> <type>spin</type> <object-name>cone</object-name> <object-name>fan</object-name> <factor>67</factor> <property>engines/engine[0]/n2-actual</property> <axis> <x>-1</x> <y>0</y> <z>0</z> </axis> </animation> 
+</PropertyList>
+
