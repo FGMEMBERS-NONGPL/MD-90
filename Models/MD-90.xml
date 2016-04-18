@@ -33,7 +33,7 @@ in some cases based on observable cases in photos.
   <path>Aircraft/Generic/Effects/tyre-smoke-nose.xml</path>
   <name>tyre-smoke-n</name>
   <offsets>
-   <x-m>2.40</x-m>
+   <x-m>1</x-m>
    <y-m>0</y-m>
    <z-m>-2.18</z-m>
   </offsets>
@@ -43,7 +43,7 @@ in some cases based on observable cases in photos.
   <path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
   <name>tyre-smoke-p</name>
   <offsets>
-   <x-m>24.36</x-m>
+   <x-m>23.76</x-m>
    <y-m>-2.57</y-m>
    <z-m>-2.43</z-m>
   </offsets>
@@ -53,7 +53,7 @@ in some cases based on observable cases in photos.
   <path>Aircraft/Generic/Effects/tyre-smoke-stbd.xml</path>
   <name>tyre-smoke-s</name>
   <offsets>
-   <x-m>24.36</x-m>
+   <x-m>23.76</x-m>
    <y-m>2.57</y-m>
    <z-m>-2.436</z-m>
   </offsets>
@@ -65,7 +65,7 @@ in some cases based on observable cases in photos.
 	<name>fuel-truck</name>
 	<path>Aircraft/MD-90/Models/Services/Fuel-Truck/Fuel_Truck_Short_VolvoFM.xml</path>
 	<offsets>
-		<x-m>14</x-m>
+		<x-m>13.4</x-m>
      	 	<y-m>6</y-m>
      		 <z-m>1.81</z-m>
 	</offsets>
@@ -187,7 +187,7 @@ in some cases based on observable cases in photos.
  <path>Aircraft/MD-90/Models/Services/Stairs/stairs.xml</path>
  <name>l1</name>
  <offsets>
-  <x-m>4.4</x-m>
+  <x-m>3</x-m>
   <y-m>-1.67</y-m>
   <z-m>0.0000</z-m>
   <heading-deg>-8</heading-deg>
@@ -1151,7 +1151,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>1.969</x-m>
+    <x-m>0.569</x-m>
     <y-m>0</y-m>
     <z-m>-0.919</z-m>
   </center>
@@ -1291,7 +1291,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.000</ind><dep>56.112</dep></entry>
   </interpolation>   
   <center>
-    <x-m>1.350</x-m>
+    <x-m>-0.05</x-m>
     <y-m>0</y-m>
     <z-m>-1.667</z-m>
   </center>
@@ -1319,7 +1319,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.000</ind><dep>56.112</dep></entry>
   </interpolation>   
   <center>
-    <x-m>1.881</x-m>
+    <x-m>0.481</x-m>
     <y-m>0</y-m>
     <z-m>-2.154</z-m>
   </center>
@@ -1345,7 +1345,7 @@ in some cases based on observable cases in photos.
   <property>gear/gear[0]/rollspeed-ms</property>
   <factor>-20.0</factor>
   <center>
-    <x-m>2.397</x-m>
+    <x-m>0.997</x-m>
     <y-m>0</y-m>
     <z-m>-2.143</z-m>
   </center>
@@ -1390,7 +1390,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.390</x-m>
+    <x-m>23.790</x-m>
     <y-m>-2.545</y-m>
     <z-m>-0.658</z-m>
   </center>
@@ -1411,7 +1411,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.208</x-m>
+    <x-m>23.608</x-m>
     <y-m>-2.545</y-m>
     <z-m>-1.496</z-m>
   </center>
@@ -1431,7 +1431,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.244</x-m>
+    <x-m>23.644</x-m>
     <y-m>-2.154</y-m>
     <z-m>-1.105</z-m>
   </center>
@@ -1511,7 +1511,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.000</ind><dep>56.270</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.545</x-m>
+    <x-m>23.945</x-m>
     <y-m>-2.547</y-m>
     <z-m>-1.745</z-m>
   </center>
@@ -1539,7 +1539,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.000</ind><dep>56.270</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.545</x-m>
+    <x-m>23.945</x-m>
     <y-m>-2.547</y-m>
     <z-m>-2.441</z-m>
   </center>
@@ -1565,7 +1565,7 @@ in some cases based on observable cases in photos.
   <property>gear/gear[1]/rollspeed-ms</property>
   <factor>-14.0</factor>
   <center>
-    <x-m>24.389</x-m>
+    <x-m>23.789</x-m>
     <y-m>-2.545</y-m>
     <z-m>-2.441</z-m>
   </center>
@@ -1610,7 +1610,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.390</x-m>
+    <x-m>23.790</x-m>
     <y-m>2.545</y-m>
     <z-m>-0.658</z-m>
   </center>
@@ -1631,7 +1631,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.208</x-m>
+    <x-m>23.608</x-m>
     <y-m>2.545</y-m>
     <z-m>-1.496</z-m>
   </center>
@@ -1651,7 +1651,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep> 0.0</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.244</x-m>
+    <x-m>23.644</x-m>
     <y-m>2.154</y-m>
     <z-m>-1.105</z-m>
   </center>
@@ -1731,7 +1731,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.000</ind><dep>56.270</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.545</x-m>
+    <x-m>23.945</x-m>
     <y-m>2.547</y-m>
     <z-m>-1.745</z-m>
   </center>
@@ -1759,7 +1759,7 @@ in some cases based on observable cases in photos.
     <entry><ind>1.000</ind><dep>56.270</dep></entry>
   </interpolation>   
   <center>
-    <x-m>24.545</x-m>
+    <x-m>23.945</x-m>
     <y-m>2.547</y-m>
     <z-m>-2.441</z-m>
   </center>
@@ -1785,7 +1785,7 @@ in some cases based on observable cases in photos.
   <property>gear/gear[2]/rollspeed-ms</property>
   <factor>-14.0</factor>
   <center>
-    <x-m>24.389</x-m>
+    <x-m>23.789</x-m>
     <y-m>2.545</y-m>
     <z-m>-2.441</z-m>
   </center>
@@ -1794,326 +1794,7 @@ in some cases based on observable cases in photos.
     <y>1</y>
     <z>0</z>
   </axis>
-</animation> 
-
-
-<!-- Engine fans -->
-
-<animation>
-  <type>select</type>
-  <object-name>EngFanDiskL</object-name>
-  <condition>
-    <greater-than>
-      <property>engines/engine[0]/n2-actual</property>
-      <value>25</value>
-    </greater-than>
-  </condition>
-</animation>
-<animation>
-
-
-  <type>select</type>
-  <object-name>EngFanDiskR</object-name>
-  <condition>
-    <greater-than>
-      <property>engines/engine[1]/n2-actual</property>
-      <value>25</value>
-    </greater-than>
-  </condition>
-</animation>
-
-<animation>
-  <type>select</type>
-  <object-name>EngFanDiskL1</object-name>
-  <condition>
-    <less-than-equals>
-      <property>engines/engine[0]/n2-actual</property>
-      <value>25</value>
-    </less-than-equals>
-  </condition>
-</animation>
-<animation>
-  <type>select</type>
-  <object-name>EngFanDiskR1</object-name>
-  <condition>
-    <less-than-equals>
-      <property>engines/engine[1]/n2-actual</property>
-      <value>25</value>
-    </less-than-equals>
-  </condition>
-</animation>
-
-<animation>
-  <type>spin</type>
-  <object-name>EngFanDiskL</object-name>
-  <property>engines/engine[0]/n2-actual</property>
-  <factor>1</factor>
-  <axis>
-    <x1-m>31.431</x1-m>
-    <y1-m>-2.7</y1-m>
-    <z1-m>0.769</z1-m>
-    <x2-m>33.757</x2-m>
-    <y2-m>-2.7</y2-m>
-    <z2-m>0.687</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>spin</type>
-  <object-name>EngFanDiskR</object-name>
-  <property>engines/engine[1]/n2-actual</property>
-  <factor>1</factor>
-  <axis>
-    <x1-m>31.431</x1-m>
-    <y1-m>2.7</y1-m>
-    <z1-m>0.769</z1-m>
-    <x2-m>33.757</x2-m>
-    <y2-m>2.7</y2-m>
-    <z2-m>0.687</z2-m>
-  </axis>
-</animation> 
-
-<animation>
-  <type>spin</type>
-  <object-name>EngFanDiskL1</object-name>
-  <property>engines/engine[0]/n2-actual</property>
-  <factor>1</factor>
-  <axis>
-    <x1-m>31.431</x1-m>
-    <y1-m>-2.7</y1-m>
-    <z1-m>0.769</z1-m>
-    <x2-m>33.757</x2-m>
-    <y2-m>-2.7</y2-m>
-    <z2-m>0.687</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>spin</type>
-  <object-name>EngFanDiskR1</object-name>
-  <property>engines/engine[1]/n2-actual</property>
-  <factor>1</factor>
-  <axis>
-    <x1-m>31.431</x1-m>
-    <y1-m>2.7</y1-m>
-    <z1-m>0.769</z1-m>
-    <x2-m>33.757</x2-m>
-    <y2-m>2.7</y2-m>
-    <z2-m>0.687</z2-m>
-  </axis>
-</animation> 
-
-<!-- Engine reversers -->
-
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutFDL</object-name>
-  <object-name>EngRevDL</object-name>
-  <property>surface-positions/reverser-norm[0]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>  0</dep></entry>
-    <entry><ind>1</ind><dep>142</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.999</x1-m>
-    <y1-m>-3.215</y1-m>
-    <z1-m>0.728</z1-m>
-    <x2-m>36.991</x2-m>
-    <y2-m>-2.146</y2-m>
-    <z2-m>0.516</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevDL</object-name>
-  <property>surface-positions/reverser-norm[0]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>  0</dep></entry>
-    <entry><ind>1</ind><dep>-67</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.213</x1-m>
-    <y1-m>-3.318</y1-m>
-    <z1-m>0.674</z1-m>
-    <x2-m>36.204</x2-m>
-    <y2-m>-2.082</y2-m>
-    <z2-m>0.429</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutADL</object-name>
-  <property>surface-positions/reverser-norm[0]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>  0</dep></entry>
-    <entry><ind>1</ind><dep>190</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>37.234</x1-m>
-    <y1-m>-3.215</y1-m>
-    <z1-m>0.720</z1-m>
-    <x2-m>37.226</x2-m>
-    <y2-m>-2.146</y2-m>
-    <z2-m>0.508</z2-m>
-  </axis>
-</animation> 
-
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutFVL</object-name>
-  <object-name>EngRevVL</object-name>
-  <property>surface-positions/reverser-norm[0]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>   0</dep></entry>
-    <entry><ind>1</ind><dep>-142</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.992</x1-m>
-    <y1-m>-3.254</y1-m>
-    <z1-m>0.532</z1-m>
-    <x2-m>36.985</x2-m>
-    <y2-m>-2.185</y2-m>
-    <z2-m>0.320</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevVL</object-name>
-  <property>surface-positions/reverser-norm[0]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep> 0</dep></entry>
-    <entry><ind>1</ind><dep>67</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.213</x1-m>
-    <y1-m>-3.318</y1-m>
-    <z1-m>0.674</z1-m>
-    <x2-m>36.204</x2-m>
-    <y2-m>-2.082</y2-m>
-    <z2-m>0.429</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutAVL</object-name>
-  <property>surface-positions/reverser-norm[0]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>   0</dep></entry>
-    <entry><ind>1</ind><dep>-190</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>37.227</x1-m>
-    <y1-m>-3.254</y1-m>
-    <z1-m>0.524</z1-m>
-    <x2-m>37.219</x2-m>
-    <y2-m>-2.185</y2-m>
-    <z2-m>0.312</z2-m>
-  </axis>
-</animation> 
-
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutFDR</object-name>
-  <object-name>EngRevDR</object-name>
-  <property>surface-positions/reverser-norm[1]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>  0</dep></entry>
-    <entry><ind>1</ind><dep>142</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.991</x1-m>
-    <y1-m>2.146</y1-m>
-    <z1-m>0.516</z1-m>
-    <x2-m>36.999</x2-m>
-    <y2-m>3.215</y2-m>
-    <z2-m>0.728</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevDR</object-name>
-  <property>surface-positions/reverser-norm[1]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>  0</dep></entry>
-    <entry><ind>1</ind><dep>-67</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.204</x1-m>
-    <y1-m>2.082</y1-m>
-    <z1-m>0.429</z1-m>
-    <x2-m>36.213</x2-m>
-    <y2-m>3.318</y2-m>
-    <z2-m>0.674</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutADR</object-name>
-  <property>surface-positions/reverser-norm[1]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>  0</dep></entry>
-    <entry><ind>1</ind><dep>190</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>37.226</x1-m>
-    <y1-m>2.146</y1-m>
-    <z1-m>0.508</z1-m>
-    <x2-m>37.234</x2-m>
-    <y2-m>3.215</y2-m>
-    <z2-m>0.720</z2-m>
-  </axis>
-</animation> 
-
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutFVR</object-name>
-  <object-name>EngRevVR</object-name>
-  <property>surface-positions/reverser-norm[1]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>   0</dep></entry>
-    <entry><ind>1</ind><dep>-142</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.985</x1-m>
-    <y1-m>2.185</y1-m>
-    <z1-m>0.320</z1-m>
-    <x2-m>36.992</x2-m>
-    <y2-m>3.254</y2-m>
-    <z2-m>0.532</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevVR</object-name>
-  <property>surface-positions/reverser-norm[1]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep> 0</dep></entry>
-    <entry><ind>1</ind><dep>67</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>36.204</x1-m>
-    <y1-m>2.082</y1-m>
-    <z1-m>0.429</z1-m>
-    <x2-m>36.213</x2-m>
-    <y2-m>3.318</y2-m>
-    <z2-m>0.674</z2-m>
-  </axis>
-</animation> 
-<animation>
-  <type>rotate</type>
-  <object-name>EngRevStrutAVR</object-name>
-  <property>surface-positions/reverser-norm[1]</property>
-  <interpolation>
-    <entry><ind>0</ind><dep>   0</dep></entry>
-    <entry><ind>1</ind><dep>-190</dep></entry>
-  </interpolation>   
-  <axis>
-    <x1-m>37.219</x1-m>
-    <y1-m>2.185</y1-m>
-    <z1-m>0.312</z1-m>
-    <x2-m>37.227</x2-m>
-    <y2-m>3.254</y2-m>
-    <z2-m>0.524</z2-m>
-  </axis>
-</animation> 
+</animation>  
 
 
 <!-- Pushback -->
@@ -2129,7 +1810,7 @@ in some cases based on observable cases in photos.
   </condition>
    
  <offsets>
-            <x-m>-4</x-m>
+            <x-m>-5.4</x-m>
             <y-m>0</y-m>
             <z-m>-2.34</z-m>
  </offsets>
