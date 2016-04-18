@@ -74,7 +74,7 @@
   </emission>
 </animation>
 
-<!-- Power on/off -->
+	<!-- Power on/off -->
 	<animation>
 		<name>Power on/off</name>
 		<type>select</type>
@@ -86,7 +86,6 @@
 			</less-than>
 		</condition>
 	</animation>
-
 <animation>
   <type>select</type>
   <object-name>ATDigit1</object-name>

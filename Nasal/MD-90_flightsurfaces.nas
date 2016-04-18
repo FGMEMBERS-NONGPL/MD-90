@@ -172,14 +172,14 @@ var spoiler_arm = func {
     spoilers_auto.setBoolValue(1);
   }
   spoilers_auto_ani.setBoolValue(1);				# For cockpit speedbrake lever animation
-  md81_screenmssg.fg = [1, 1, 1, 1];
-  md81_screenmssg.write("Ground spoilers armed.");
+  MD90_screenmssg.fg = [1, 1, 1, 1];
+  MD90_screenmssg.write("Ground spoilers armed.");
 }
 var spoiler_disarm = func {
   spoilers_auto.setBoolValue(0);
   spoilers_auto_ani.setBoolValue(0);
-  md81_screenmssg.fg = [1, 1, 1, 1];
-  md81_screenmssg.write("Ground spoilers disarmed.");
+  MD90_screenmssg.fg = [1, 1, 1, 1];
+  MD90_screenmssg.write("Ground spoilers disarmed.");
 }
 
 

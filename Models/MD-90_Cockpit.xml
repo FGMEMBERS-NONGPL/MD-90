@@ -237,6 +237,7 @@
   <object-name>FlapLever</object-name>
   <action>
     <button>0</button>
+    <button>4</button>
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
@@ -255,6 +256,7 @@
   <object-name>FlapLever</object-name>
   <action>
     <button>1</button>
+    <button>3</button>
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
@@ -317,6 +319,7 @@
   <object-name>ThrottleRevL</object-name>
   <action>
     <button>0</button>
+    <button>3</button>
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
@@ -334,6 +337,7 @@
   <object-name>ThrottleRevL</object-name>
   <action>
     <button>1</button>
+    <button>4</button>
     <repeatable>false</repeatable>
     <binding>
       <command>property-adjust</command>
@@ -453,7 +457,7 @@
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD81.eng_startup_2(0);</script>
+      <script>MD90.eng_startup_2(0);</script>
     </binding>
   </action>
 </animation>
@@ -489,7 +493,7 @@
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD81.eng_startup_2(1);</script>
+      <script>MD90.eng_startup_2(1);</script>
     </binding>
   </action>
 </animation>
@@ -605,7 +609,7 @@
     <repeatable>false</repeatable>
     <binding> 
         <command>nasal</command>
-        <script>MD81.spoiler_arm();</script>
+        <script>MD90.spoiler_arm();</script>
       </binding>
   </action>
 </animation>
@@ -617,7 +621,7 @@
     <repeatable>false</repeatable>
     <binding> 
         <command>nasal</command>
-        <script>MD81.spoiler_disarm();</script>
+        <script>MD90.spoiler_disarm();</script>
       </binding>
   </action>
 </animation>
@@ -721,7 +725,7 @@
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD81.abs_arm();</script>
+      <script>MD90.abs_arm();</script>
     </binding>
   </action>
 </animation>
