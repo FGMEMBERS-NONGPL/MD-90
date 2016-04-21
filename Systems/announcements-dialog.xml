@@ -40,7 +40,7 @@
 
   <hrule/>
 
-   <checkbox>
+   <!--checkbox>
       <halign>left</halign>
       <label>Fasten Seatbelts</label>
       <property>/controls/switches/seatbelt-sign</property>
@@ -172,7 +172,7 @@
         <command>property-toggle</command>
         <property>/controls/switches/emergency</property>
       </binding>
-    </checkbox>
+    </checkbox-->
 
 
 

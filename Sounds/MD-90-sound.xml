@@ -315,7 +315,7 @@
  <max-dist>100.0</max-dist>
 </music2>
 
-<seatbelt>
+<!--seatbelt>
 <name>Seatbelt</name>
  <path>Aircraft/MD-90/Sounds/seatbelt.wav</path>
  <mode>once</mode>
@@ -542,7 +542,7 @@
  </position>
  <reference-dist>20.0</reference-dist>
  <max-dist>100.0</max-dist>
-</Turbulence>
+</Turbulence-->
 
 <crash>
             <name>Crash</name>

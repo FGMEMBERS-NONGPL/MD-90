@@ -1,4 +1,4 @@
-# MD-88
+# MD-90
 #
 # Engine support routines
 #
