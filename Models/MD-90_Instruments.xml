@@ -57,11 +57,41 @@ McDonnell Douglas MD-90
   <object-name>pneu</object-name>
   <object-name>apu_rpm</object-name>
   <object-name>apu_egt</object-name>
+  <object-name>L_efis</object-name>
+  <object-name>R_efis</object-name> 
+  <object-name>apindicator_L</object-name> 
+  <object-name>apindicator_R</object-name> 
+  <object-name>enginepanel</object-name> 
+  <object-name>enginepanel2</object-name> 
 </animation>
 
 
 
 <!-- Captain Panel -->
+
+<model>
+  <name>apindicator_L</name>
+  <path>Aircraft/MD-90/Models/Instruments/apindicator.xml</path>
+  <offsets>
+    <x-m>2.229</x-m>
+    <y-m>-0.320</y-m>
+    <z-m>0.966</z-m>
+    <pitch-deg>-12</pitch-deg>
+  </offsets>
+</model>
+
+<model>
+  <name>L_efis</name>
+  <path>Aircraft/MD-90/Models/Instruments/EFIS/efis_L.xml</path>
+  <offsets>
+    <x-m>2.586</x-m>
+    <y-m>-0.918</y-m>
+    <z-m>0.888</z-m>
+    <pitch-deg>-35</pitch-deg>
+    <heading-deg>38</heading-deg>
+	<roll-deg>20</roll-deg>
+  </offsets>
+</model>
 
 <model>
   <name>clock</name>
@@ -182,7 +212,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>ai</name>
-  <path>Aircraft/MD-90/Models/Instruments/stby-ai/stby-ai.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/ai.xml</path>
   <offsets>
     <x-m>2.216</x-m>
     <y-m>-0.189</y-m>
@@ -192,6 +222,39 @@ McDonnell Douglas MD-90
 </model>
 
 <model>
+  <name>alt</name>
+  <path>Aircraft/MD-90/Models/Instruments/altimeter2.xml</path>
+  <offsets>
+    <x-m>2.238</x-m>
+    <y-m>-0.189</y-m>
+    <z-m>0.815</z-m>
+    <pitch-deg>-12</pitch-deg>
+  </offsets>
+</model>
+
+<model>
+  <name>enginepanel</name>
+  <path>Aircraft/MD-90/Models/Instruments/enginepanel.xml</path>
+  <offsets>
+    <x-m>2.230</x-m>
+    <y-m>-0.066</y-m>
+    <z-m>0.878</z-m>
+    <pitch-deg>-12</pitch-deg>
+  </offsets>
+</model>
+
+<model>
+  <name>enginepanel2</name>
+  <path>Aircraft/MD-90/Models/Instruments/enginepanel2.xml</path>
+  <offsets>
+    <x-m>2.230</x-m>
+    <y-m>0.06</y-m>
+    <z-m>0.878</z-m>
+    <pitch-deg>-12</pitch-deg>
+  </offsets>
+</model>
+
+<!--model>
   <name>revthrust_indicators</name>
   <path>Aircraft/MD-90/Models/Instruments/revthrust_ind.xml</path>
   <offsets>
@@ -200,20 +263,20 @@ McDonnell Douglas MD-90
     <z-m>0.969</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
-</model>
+</model-->
 
 <model>
   <name>fuel</name>
   <path>Aircraft/MD-90/Models/Instruments/fuel.xml</path>
   <offsets>
     <x-m>2.238</x-m>
-    <y-m>-0.175</y-m>
-    <z-m>0.813</z-m>
+    <y-m>0.165</y-m>
+    <z-m>0.803</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
 </model>
 
-<model>
+<!--model>
   <name>eprL</name>
   <path>Aircraft/MD-90/Models/Instruments/eprL.xml</path>
   <offsets>
@@ -316,7 +379,7 @@ McDonnell Douglas MD-90
     <z-m>0.783</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
-</model>
+</model-->
 
 <model>
   <name>gear_indicators</name>
@@ -329,7 +392,7 @@ McDonnell Douglas MD-90
   </offsets>
 </model>
 
-<model>
+<!--model>
   <name>flaps</name>
   <path>Aircraft/MD-90/Models/Instruments/flaps.xml</path>
   <offsets>
@@ -338,10 +401,34 @@ McDonnell Douglas MD-90
     <z-m>0.783</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
-</model>
+</model-->
 
 
 <!-- Copilot Panel -->
+
+<model>
+  <name>apindicator_R</name>
+  <path>Aircraft/MD-90/Models/Instruments/apindicator.xml</path>
+  <offsets>
+    <x-m>2.229</x-m>
+    <y-m>0.320</y-m>
+    <z-m>0.966</z-m>
+    <pitch-deg>-12</pitch-deg>
+  </offsets>
+</model>
+
+<model>
+  <name>R_efis</name>
+  <path>Aircraft/MD-90/Models/Instruments/EFIS/efis_R.xml</path>
+  <offsets>
+    <x-m>2.586</x-m>
+    <y-m>0.918</y-m>
+    <z-m>0.888</z-m>
+    <pitch-deg>-35</pitch-deg>
+    <heading-deg>-38</heading-deg>
+	<roll-deg>-20</roll-deg>
+  </offsets>
+</model>
 
 <model>
   <name>eadi_R</name>
