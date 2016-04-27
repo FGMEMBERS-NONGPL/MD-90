@@ -16,6 +16,7 @@ McDonnell Douglas MD-90
   <object-name>rmi</object-name>
   <object-name>eadi</object-name>
   <object-name>alt</object-name>
+  <object-name>altbezel</object-name>
   <object-name>asi</object-name>
   <object-name>vsi</object-name>
   <object-name>ND_L</object-name>
@@ -222,8 +223,19 @@ McDonnell Douglas MD-90
 </model>
 
 <model>
-  <name>alt</name>
+  <name>altbezel</name>
   <path>Aircraft/MD-90/Models/Instruments/altimeter2.xml</path>
+  <offsets>
+    <x-m>2.238</x-m>
+    <y-m>-0.189</y-m>
+    <z-m>0.815</z-m>
+    <pitch-deg>-12</pitch-deg>
+  </offsets>
+</model>
+
+<model>
+  <name>alt</name>
+  <path>Aircraft/MD-90/Models/Instruments/stbyalt.xml</path>
   <offsets>
     <x-m>2.238</x-m>
     <y-m>-0.189</y-m>
