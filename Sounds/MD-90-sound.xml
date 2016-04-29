@@ -106,7 +106,7 @@
   <wind>
    <name>wind</name>
    <mode>looped</mode>
-   <path>Sounds/wind.wav</path>
+   <path>Aircraft/MD-90/Sounds/wind.wav</path>
    <property>/velocities/airspeed-kt</property>
    <volume>
     <property>/position/altitude-ft</property>
