@@ -496,7 +496,7 @@ in some cases based on observable cases in photos.
     <entry><ind>  1</ind><dep>2.4</dep></entry>
   </interpolation>   
   <center>
-    <x-m>20.145</x-m>
+    <x-m>19.545</x-m>
     <y-m>-1.629</y-m>
     <z-m>-0.306</z-m>
   </center>
@@ -517,7 +517,7 @@ in some cases based on observable cases in photos.
     <entry><ind>  1</ind><dep>0.56</dep></entry>
   </interpolation>   
   <center>
-    <x-m>20.145</x-m>
+    <x-m>19.545</x-m>
     <y-m>-1.629</y-m>
     <z-m>-0.306</z-m>
   </center>
@@ -539,7 +539,7 @@ in some cases based on observable cases in photos.
     <entry><ind>  1</ind><dep>2.4</dep></entry>
   </interpolation>   
   <center>
-    <x-m>20.145</x-m>
+    <x-m>19.545</x-m>
     <y-m>1.629</y-m>
     <z-m>-0.306</z-m>
   </center>
@@ -560,7 +560,7 @@ in some cases based on observable cases in photos.
     <entry><ind>  1</ind><dep>0.56</dep></entry>
   </interpolation>   
   <center>
-    <x-m>20.145</x-m>
+    <x-m>19.545</x-m>
     <y-m>1.629</y-m>
     <z-m>-0.306</z-m>
   </center>
@@ -586,7 +586,7 @@ in some cases based on observable cases in photos.
     <entry><ind>  1.0</ind><dep>40</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>24.894</x1-m>
+    <x1-m>24.294</x1-m>
     <y1-m>-5.036</y1-m>
     <z1-m>-1.138</z1-m>
     <x2-m>24.894</x2-m>
@@ -606,10 +606,10 @@ in some cases based on observable cases in photos.
     <entry><ind>  1.0</ind><dep>40.0</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>24.894</x1-m>
+    <x1-m>24.294</x1-m>
     <y1-m>1.635</y1-m>
     <z1-m>-1.355</z1-m>
-    <x2-m>24.894</x2-m>
+    <x2-m>24.294</x2-m>
     <y2-m>5.036</y2-m>
     <z2-m>-1.138</z2-m>
   </axis>
@@ -627,10 +627,10 @@ in some cases based on observable cases in photos.
     <entry><ind>  1.0</ind><dep>41.7</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>26.311</x1-m>
+    <x1-m>25.711</x1-m>
     <y1-m>-10.031</y1-m>
     <z1-m>-0.663</z1-m>
-    <x2-m>24.894</x2-m>
+    <x2-m>24.294</x2-m>
     <y2-m>-5.036</y2-m>
     <z2-m>-1.138</z2-m>
   </axis>
@@ -646,10 +646,10 @@ in some cases based on observable cases in photos.
     <entry><ind>  1.0</ind><dep>41.7</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>24.894</x1-m>
+    <x1-m>24.294</x1-m>
     <y1-m>5.036</y1-m>
     <z1-m>-1.138</z1-m>
-    <x2-m>26.311</x2-m>
+    <x2-m>25.711</x2-m>
     <y2-m>10.031</y2-m>
     <z2-m>-0.663</z2-m>
   </axis>
@@ -684,10 +684,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1</ind><dep>40</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>24.852</x1-m>
+    <x1-m>23.652</x1-m>
     <y1-m>-5.022</y1-m>
     <z1-m>-0.384</z1-m>
-    <x2-m>24.857</x2-m>
+    <x2-m>23.657</x2-m>
     <y2-m>-1.635</y2-m>
     <z2-m>-0.577</z2-m>
   </axis>
@@ -702,10 +702,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1</ind><dep>40</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>26.393</x1-m>
+    <x1-m>25.193</x1-m>
     <y1-m>-10.431</y1-m>
     <z1-m>-0.208</z1-m>
-    <x2-m>24.891</x2-m>
+    <x2-m>23.691</x2-m>
     <y2-m>-5.155</y2-m>
     <z2-m>-0.379</z2-m>
   </axis>
@@ -720,10 +720,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1</ind><dep>40</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>24.857</x1-m>
+    <x1-m>24.257</x1-m>
     <y1-m>1.635</y1-m>
     <z1-m>-0.577</z1-m>
-    <x2-m>24.852</x2-m>
+    <x2-m>24.252</x2-m>
     <y2-m>5.022</y2-m>
     <z2-m>-0.384</z2-m>
   </axis>
@@ -738,10 +738,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1</ind><dep>40</dep></entry>
   </interpolation>
   <axis>
-    <x1-m>24.891</x1-m>
+    <x1-m>24.291</x1-m>
     <y1-m>5.155</y1-m>
     <z1-m>-0.379</z1-m>
-    <x2-m>26.393</x2-m>
+    <x2-m>25.793</x2-m>
     <y2-m>10.431</y2-m>
     <z2-m>-0.208</z2-m>
   </axis>
@@ -762,10 +762,10 @@ in some cases based on observable cases in photos.
     <entry><ind> 1</ind><dep> 15</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>27.573</x1-m>
+    <x1-m>26.973</x1-m>
     <y1-m>-13.612</y1-m>
     <z1-m>-0.159</z1-m>
-    <x2-m>26.644</x2-m>
+    <x2-m>26.044</x2-m>
     <y2-m>-10.437</y2-m>
     <z2-m>-0.278</z2-m>
   </axis>
@@ -780,10 +780,10 @@ in some cases based on observable cases in photos.
     <entry><ind> 1</ind><dep>-20</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>27.511</x1-m>
+    <x1-m>26.911</x1-m>
     <y1-m>-11.715</y1-m>
     <z1-m>-0.244</z1-m>
-    <x2-m>27.251</x2-m>
+    <x2-m>26.651</x2-m>
     <y2-m>-10.561</y2-m>
     <z2-m>-0.293</z2-m>
   </axis>
@@ -798,10 +798,10 @@ in some cases based on observable cases in photos.
     <entry><ind> 1</ind><dep>-20</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>27.731</x1-m>
+    <x1-m>26.131</x1-m>
     <y1-m>-12.690</y1-m>
     <z1-m>-0.203</z1-m>
-    <x2-m>27.543</x2-m>
+    <x2-m>26.943</x2-m>
     <y2-m>-11.855</y2-m>
     <z2-m>-0.239</z2-m>
   </axis>
@@ -819,10 +819,10 @@ in some cases based on observable cases in photos.
     <entry><ind> 1</ind><dep> 20</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>26.644</x1-m>
+    <x1-m>26.044</x1-m>
     <y1-m>10.437</y1-m>
     <z1-m>-0.278</z1-m>
-    <x2-m>27.573</x2-m>
+    <x2-m>26.973</x2-m>
     <y2-m>13.612</y2-m>
     <z2-m>-0.159</z2-m>
   </axis>
@@ -837,10 +837,10 @@ in some cases based on observable cases in photos.
     <entry><ind> 1</ind><dep>20</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>27.251</x1-m>
+    <x1-m>26.651</x1-m>
     <y1-m>10.561</y1-m>
     <z1-m>-0.293</z1-m>
-    <x2-m>27.511</x2-m>
+    <x2-m>26.911</x2-m>
     <y2-m>11.715</y2-m>
     <z2-m>-0.244</z2-m>
   </axis>
@@ -855,10 +855,10 @@ in some cases based on observable cases in photos.
     <entry><ind> 1</ind><dep> 20</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>27.543</x1-m>
+    <x1-m>26.943</x1-m>
     <y1-m>11.855</y1-m>
     <z1-m>-0.239</z1-m>
-    <x2-m>27.731</x2-m>
+    <x2-m>27.131</x2-m>
     <y2-m>12.690</y2-m>
     <z2-m>-0.203</z2-m>
   </axis>
@@ -877,10 +877,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep>-60</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>26.247</x1-m>
+    <x1-m>25.647</x1-m>
     <y1-m>-9.880</y1-m>
     <z1-m>-0.168</z1-m>
-    <x2-m>25.008</x2-m>
+    <x2-m>24.408</x2-m>
     <y2-m>-5.569</y2-m>
     <z2-m>-0.290</z2-m>
   </axis>
@@ -895,10 +895,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep>-60</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>24.872</x1-m>
+    <x1-m>24.272</x1-m>
     <y1-m>-5.036</y1-m>
     <z1-m>-0.307</z1-m>
-    <x2-m>24.872</x2-m>
+    <x2-m>24.272</x2-m>
     <y2-m>-2.788</y2-m>
     <z2-m>-0.440</z2-m>
   </axis>
@@ -914,10 +914,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep>-60</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>25.008</x1-m>
+    <x1-m>24.408</x1-m>
     <y1-m>5.569</y1-m>
     <z1-m>-0.290</z1-m>
-    <x2-m>26.247</x2-m>
+    <x2-m>25.647</x2-m>
     <y2-m>9.880</y2-m>
     <z2-m>-0.168</z2-m>
   </axis>
@@ -932,10 +932,10 @@ in some cases based on observable cases in photos.
     <entry><ind>1.0</ind><dep>-60</dep></entry>
   </interpolation>   
   <axis>
-    <x1-m>24.872</x1-m>
+    <x1-m>24.272</x1-m>
     <y1-m>2.788</y1-m>
     <z1-m>-0.440</z1-m>
-    <x2-m>24.872</x2-m>
+    <x2-m>24.272</x2-m>
     <y2-m>5.036</y2-m>
     <z2-m>-0.307</z2-m>
   </axis>
@@ -1177,10 +1177,10 @@ in some cases based on observable cases in photos.
   <property>gear/gear[0]/caster-angle-deg</property>
   <factor>-1</factor>
   <axis>
-    <x1-m>2.382</x1-m>
+    <x1-m>0.982</x1-m>
     <y1-m>0</y1-m>
     <z1-m>-2.2443</z1-m>
-    <x2-m>2.522</x2-m>
+    <x2-m>1.122</x2-m>
     <y2-m>0</y2-m>
     <z2-m>-1.253</z2-m>
   </axis>
