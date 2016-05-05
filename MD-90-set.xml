@@ -197,6 +197,29 @@ For Manual Engine Start, see the checlists in the Help Menu.
 	     </binding>
     </item>
 	<item>
+	<name>fail</name>
+	<label>Failures Dialog</label>
+	<binding>
+		<command>nasal</command>
+		<script>
+		 var fail = gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/MD-90/Systems/failures-dlg.xml");
+		 fail.open();
+		</script>
+	</binding>
+	</item>
+	<item>
+	<name>failreset</name>
+	<label>Failures Reset</label>
+	<binding>
+		<command>nasal</command>
+		<script>
+		setprop("/sim/failure-manager/controls/flight/flaps/serviceable", 1);
+		#setprop("/sim/failure-manager/controls/flight/speedbrake/serviceable", 1);
+		MD88.eng_magicstartup();
+		</script>
+	</binding>
+	</item>
+	<item>
 	<name>fuel</name>
 	<label>Fuel Truck Controls</label>
 	<binding>
@@ -418,6 +441,7 @@ State: off (0), startup stage 1 (1), startup stage 2 (2), running (3), shutdown 
   <MD90>
     <file>Aircraft/MD-90/Nasal/MD-90_fuel.nas</file>
     <file>Aircraft/MD-90/Nasal/MD-90_electrical.nas</file>
+	<file>Aircraft/MD-90/Nasal/MD-90_failure.nas</file>
     <file>Aircraft/MD-90/Nasal/MD-90_pneumatics.nas</file>
     <file>Aircraft/MD-90/Nasal/MD-90_apu.nas</file>
     <file>Aircraft/MD-90/Nasal/MD-90_flightsurfaces.nas</file>
