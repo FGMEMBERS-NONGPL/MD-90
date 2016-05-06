@@ -157,8 +157,6 @@ var update_apparmelec = func {
   
 var update_electrical = func {
   elec_main();
-  update_locarmelec();
-  update_apparmelec();
   feed_status[feed["apu"]] = apu_running.getValue();
   feed_status[feed["batt"]] = sw_batt.getValue();
   update_bus();
