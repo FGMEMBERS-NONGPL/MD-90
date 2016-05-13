@@ -575,12 +575,6 @@
   </pid-controller>
 
 
-<!--
-
-MD-81 Custom PIDs
-
--->
-
 <!-- Auto throttle (Mach Hold)-->
 
  <pid-controller>
