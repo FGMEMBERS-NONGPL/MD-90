@@ -8,8 +8,8 @@ McDonnell Douglas MD-90
 <sim include="Systems/MD-90-views.xml">
   <description>McDonnell Douglas MD-90</description>
   <author>Joshua Davidson (411, ATC411, it0uchpods)</author>
-	<status>Alpha</status>
-	<aircraft-version>0.0</aircraft-version>
+	<status>Version 2.0</status>
+	<aircraft-version>V2.0</aircraft-version>
 	<rating>
             <FDM type="int">3</FDM>
             <systems type="int">3</systems>
@@ -28,7 +28,7 @@ McDonnell Douglas MD-90
   <model>
     <path>Aircraft/MD-90/Models/MD-90.xml</path>
     <livery>
-      <file type="string">American</file>
+      <file type="string">Default</file>
     </livery>
   </model> 
 
