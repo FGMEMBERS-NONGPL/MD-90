@@ -101,10 +101,9 @@ setlistener("/sim/signals/fdm-initialized", func {
   FlightSurfaceInit();			# See MD-90_flightsurfaces.nas
   PneumaticsInit();				# See MD-90_pneumatics.nas
   InstrumentationInit();		# See MD-90_instrumentation_drivers.nas
-  ap_init();					# See MD-90-autoflight.nas
+  it2.ap_init();					# See MD-90-autoflight.nas
   nd_init();					# See MD-90_efis.nas
   var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-90/Systems/autopilot-dlg.xml");
-  setprop("/controls/switches/apoffsound", 1);
   setlistener("engines/engine[0]/epr", func {
     setprop("engines/engine[0]/eprx100", (getprop("engines/engine[0]/epr") * 100));
   });
