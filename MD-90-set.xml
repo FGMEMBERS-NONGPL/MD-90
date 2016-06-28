@@ -34,7 +34,7 @@ McDonnell Douglas MD-90
 
   <systems>
     <autopilot>
-      <path>Aircraft/MD-90/Systems/MD-90-autopilot.xml</path>
+      <path>Aircraft/MD-90/Systems/it-autoflight.xml</path>
     </autopilot>
     <electrical>
       <path>Aircraft/Generic/generic-electrical.xml</path>
