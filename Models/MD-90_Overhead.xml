@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!--
-McDonnell Douglas MD-88
+McDonnell Douglas MD-90
 Gary R. Neely 'Buckaroo', Nov 2010
 -->
 
@@ -15,7 +15,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
 
 <model>
   <name>AnnunciatorPanel</name>
-  <path>Aircraft/MD-88/Models/Instruments/annunciators.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/annunciators.xml</path>
 </model>
 
 
