@@ -13,7 +13,7 @@
 		<type>translate</type>
 		<object-name>Reverser</object-name>
 		<object-name>Nozzle</object-name>
-		<property>surface-positions/reverser-norm[0]</property>
+		<property>sim/multiplay/generic/float[4]</property>
 		<factor>0.25</factor>
 		<axis>
 			<x>1</x>
