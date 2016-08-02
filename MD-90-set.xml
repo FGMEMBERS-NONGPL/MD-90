@@ -39,6 +39,9 @@ McDonnell Douglas MD-90
     <electrical>
       <path>Aircraft/Generic/generic-electrical.xml</path>
     </electrical>
+    <property-rule n="101">
+        <path>Aircraft/MD-90/Sounds/MD-90-sound-control.xml</path>
+    </property-rule>
   </systems> 
 
   <instrumentation>
