@@ -360,21 +360,6 @@
 		</volume>
 	</MDAMB>
 	
-	<!-- AUTOPILOT WARNING -->
-	
-	<MDANN>
-		<name>MD APDIS</name>
-		<path>FL2070/83apdis.wav</path>
-		<mode>once</mode>
-		<property>controls/it2/apoffsound</property>
-		<volume>
-			<property>sim/current-view/internal</property>
-		</volume>
-		<volume>
-			<property>MD80/ambience/cockpit-amb-z</property>
-		</volume>
-	</MDANN>
-	
 	<!-- ANNOUNCEMENTS -->
 	
 	<MDANN>

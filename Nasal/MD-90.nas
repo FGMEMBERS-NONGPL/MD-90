@@ -101,7 +101,7 @@ setlistener("/sim/signals/fdm-initialized", func {
   FlightSurfaceInit();			# See MD-90_flightsurfaces.nas
   PneumaticsInit();				# See MD-90_pneumatics.nas
   InstrumentationInit();		# See MD-90_instrumentation_drivers.nas
-  it2.ap_init();					# See MD-90-autoflight.nas
+  itaf.ap_init();				# See MD-90-autoflight.nas
   nd_init();					# See MD-90_efis.nas
   var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-90/Systems/autopilot-dlg.xml");
   setlistener("engines/engine[0]/epr", func {
