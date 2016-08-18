@@ -105,8 +105,6 @@ setlistener("/sim/signals/fdm-initialized", func {
   nd_init();					# See MD-90-efis.nas
   var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-90/Systems/autopilot-dlg.xml");
   setprop("/controls/engines/eprlim", 204);
-  setprop("/engines/engine/oil-pressure", 46);
-  setprop("/engines/engine[1]/oil-pressure", 49);
   setlistener("engines/engine[0]/epr", func {
     setprop("engines/engine[0]/eprx100", (getprop("engines/engine[0]/epr") * 100));
   });
