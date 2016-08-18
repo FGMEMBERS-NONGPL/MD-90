@@ -72,7 +72,7 @@
 		<object-name>Off</object-name>
 		<condition>
 			<less-than>
-				<property>systems/electrical/outputs/efis</property>
+				<property>systems/electrical/bus/dcL</property>
 				<value>15</value>
 			</less-than>
 		</condition>
@@ -470,7 +470,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
-      <script>MD88.lights_beacon_toggle();</script>
+      <script>MD90.lights_beacon_toggle();</script>
     </binding>
   </action>
 </animation>
@@ -502,7 +502,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
-      <script>MD88.lights_nav_toggle();</script>
+      <script>MD90.lights_nav_toggle();</script>
     </binding>
   </action>
 </animation>

@@ -1,7 +1,7 @@
 # This file should be loaded in the aircraft set file like so:
 # <nasal>
 #    <radar>
-#       <file>Aircraft/MD-90/Models/Instruments/RDR-160/RDR160.nas</file>
+#       <file>Aircraft/MD-88/Models/Instruments/RDR-160/RDR160.nas</file>
 #    </radar>
 #</nasal>
 #

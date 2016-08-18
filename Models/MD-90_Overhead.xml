@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!--
-McDonnell Douglas MD-88
+McDonnell Douglas MD-90
 Gary R. Neely 'Buckaroo', Nov 2010
 -->
 
@@ -15,7 +15,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
 
 <model>
   <name>AnnunciatorPanel</name>
-  <path>Aircraft/MD-88/Models/Instruments/annunciators.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/annunciators.xml</path>
 </model>
 
 
@@ -25,7 +25,9 @@ Gary R. Neely 'Buckaroo', Nov 2010
   <type>noshadow</type>
   <object-name>QuadAPU</object-name>
   <object-name>QuadEng</object-name>
-  <object-name>QuadAPUstuff</object-name>
+  <object-name>emerpwrswoff</object-name>
+  <object-name>emerpwrswon</object-name>
+  <object-name>emerpwrlt</object-name>
   <object-name>SwAPU_Master</object-name>
   <object-name>SwAPU_Air</object-name>
   <object-name>SwBatt</object-name>
@@ -72,6 +74,65 @@ Gary R. Neely 'Buckaroo', Nov 2010
   </emission>
 </animation>
 
+<!-- Emergency Power Stuff -->
+
+<animation>
+  <type>select</type>
+  <object-name>emerpwrswoff</object-name>
+  <condition>
+	<not><property>/controls/electrical/emerpwr</property></not>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>emerpwrswon</object-name>
+  <condition>
+	<property>/controls/electrical/emerpwr</property>
+  </condition>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>emerpwrswoff</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/electrical/emerpwr</property>
+	  <value>1</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>emerpwrswon</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/electrical/emerpwr</property>
+	  <value>0</value>
+    </binding>
+  </action>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>emerpwrlt</object-name>
+  <condition>
+	<property>/controls/electrical/emerpwr</property>
+  </condition>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </emission>
+</animation>
+
 <!-- APU Switches -->
 
 <animation>
@@ -110,7 +171,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD88.apu_switch();</script>
+      <script>MD90.apu_switch();</script>
     </binding>
   </action>
 </animation>
@@ -130,7 +191,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD88.apu_switch();</script>
+      <script>MD90.apu_switch();</script>
     </binding>
   </action>
 </animation>
@@ -166,7 +227,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD88.apu_air_switch();</script>
+      <script>MD90.apu_air_switch();</script>
     </binding>
   </action>
 </animation>
@@ -174,7 +235,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
 <animation>
   <type>rotate</type>
   <object-name>SwBatt</object-name>
-  <property>controls/switches/battery</property>
+  <property>controls/electrical/battery</property>
   <interpolation>
     <entry><ind>0</ind><dep> 0</dep></entry>
     <entry><ind>1</ind><dep>50</dep></entry>
@@ -197,8 +258,10 @@ Gary R. Neely 'Buckaroo', Nov 2010
     <button>0</button>
     <repeatable>false</repeatable>
     <binding>
-      <command>property-toggle</command>
-      <property>/controls/switches/battery</property>
+      <command>property-cycle</command>
+      <property>/controls/electrical/battery</property>
+	  <value>0</value>
+	  <value>1</value>
     </binding>
   </action>
 </animation>
@@ -300,7 +363,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD88.eng_startup_1(0);</script>
+      <script>MD90.eng_startup_1(0);</script>
     </binding>
     <binding>
 	 <command>property-assign</command>
@@ -309,7 +372,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
 	</binding>
 	<binding> 
       <command>nasal</command>
-      <script>MD88.eng_more0();</script>
+      <script>MD90.eng_more0();</script>
     </binding>
   </action>
 </animation>
@@ -345,7 +408,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD88.eng_startup_1(1);</script>
+      <script>MD90.eng_startup_1(1);</script>
     </binding>
 	<binding>
 	 <command>property-assign</command>
@@ -354,7 +417,7 @@ Gary R. Neely 'Buckaroo', Nov 2010
 	</binding>
 	<binding> 
       <command>nasal</command>
-      <script>MD88.eng_more1();</script>
+      <script>MD90.eng_more1();</script>
     </binding>
   </action>
 </animation>

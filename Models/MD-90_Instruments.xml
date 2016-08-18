@@ -74,9 +74,9 @@ McDonnell Douglas MD-90
   <name>apindicator_L</name>
   <path>Aircraft/MD-90/Models/Instruments/apindicator.xml</path>
   <offsets>
-    <x-m>2.229</x-m>
-    <y-m>-0.320</y-m>
-    <z-m>0.966</z-m>
+    <x-m>2.210</x-m>
+    <y-m>-0.330</y-m>
+    <z-m>0.952</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
 </model>
@@ -182,17 +182,6 @@ McDonnell Douglas MD-90
 	<x-m>2.250</x-m>
     <y-m>-0.389</y-m>
     <z-m>0.7635</z-m>
-    <pitch-deg>-12</pitch-deg>
-  </offsets>
-</model>
-
-<model>
-  <name>marker_beacons</name>
-  <path>Aircraft/MD-90/Models/Instruments/marker_beacons.xml</path>
-  <offsets>
-    <x-m>2.223</x-m>
-    <y-m>-0.249</y-m>
-    <z-m>0.884</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
 </model>
@@ -305,9 +294,9 @@ McDonnell Douglas MD-90
   <name>apindicator_R</name>
   <path>Aircraft/MD-90/Models/Instruments/apindicator.xml</path>
   <offsets>
-    <x-m>2.229</x-m>
-    <y-m>0.320</y-m>
-    <z-m>0.966</z-m>
+    <x-m>2.210</x-m>
+    <y-m>0.330</y-m>
+    <z-m>0.952</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
 </model>
