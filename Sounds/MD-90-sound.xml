@@ -5,7 +5,7 @@
 
   <apoff>
    <name>apoff</name>
-   <path>/Aircraft/MD-88/Sounds/apoff.wav</path>
+   <path>/Aircraft/MD-90/Sounds/apoff.wav</path>
    <condition>
      <property>/it-autoflight/apoffsound</property>
    </condition>
