@@ -179,7 +179,7 @@ McDonnell Douglas MD-90
     <y-m>-0.390</y-m>
     <z-m>0.766</z-m-->
 	<x-m>2.250</x-m>
-    <y-m>-0.389</y-m>
+    <y-m>-0.384</y-m>
     <z-m>0.7635</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
@@ -278,7 +278,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>Radar</name>
-  <path>Aircraft/MD-88/Models/Instruments/RDR-160/RDR-160.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/RDR-160/RDR-160.xml</path>
   <offsets>
     <x-m>2.32</x-m>
     <y-m>0.0</y-m>
@@ -291,7 +291,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>apindicator_R</name>
-  <path>Aircraft/MD-90/Models/Instruments/apindicator.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/apindicator2.xml</path>
   <offsets>
     <x-m>2.210</x-m>
     <y-m>0.330</y-m>
@@ -315,7 +315,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>eadi_R</name>
-  <path>Aircraft/MD-90/Models/Instruments/eadi.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/eadi2.xml</path>
   <offsets>
     <x-m>2.225</x-m>
     <y-m>0.513</y-m>
@@ -348,7 +348,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>asi_R</name>
-  <path>Aircraft/MD-90/Models/Instruments/asi.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/asi2.xml</path>
   <offsets>
     <x-m>2.226</x-m>
     <y-m>0.376</y-m>
@@ -359,7 +359,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>rmi_R</name>
-  <path>Aircraft/MD-90/Models/Instruments/rmi.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/rmi2.xml</path>
   <offsets>
     <x-m>2.248</x-m>
     <y-m>0.388</y-m>
@@ -370,7 +370,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>alt_R</name>
-  <path>Aircraft/MD-90/Models/Instruments/altimeter1.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/altimeter2.xml</path>
   <offsets>
     <x-m>2.229</x-m>
     <y-m>0.637</y-m>
@@ -392,10 +392,10 @@ McDonnell Douglas MD-90
 
 <model>
   <name>vsi_R</name>
-  <path>Aircraft/MD-90/Models/Instruments/vsi.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/vsi2.xml</path>
   <offsets>
 	<x-m>2.250</x-m>
-    <y-m>0.638</y-m>
+    <y-m>0.643</y-m>
     <z-m>0.7635</z-m>
     <pitch-deg>-12</pitch-deg>
   </offsets>
