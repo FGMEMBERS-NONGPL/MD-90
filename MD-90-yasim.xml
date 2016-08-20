@@ -155,7 +155,7 @@ AoA really should be 3 degrees, but 4 works better for the FDM solution.
 <!-- Gear -->
 
 <!-- Nose -->
-<gear x="-2.476" y="0" z="-2.451"
+<gear x="-1.076" y="0" z="-2.451"
 	compression="0.38"
 	spring="0.5"
 	damp="4"
