@@ -132,7 +132,7 @@ AoA really should be 3 degrees, but 4 works better for the FDM solution.
 <!-- IAE V2500 D5 --> -->
 
 
-<jet x="-33.757" y="2.7" z="0.687" mass="4567" thrust="28000" egt="625" tsfc="0.498" n1-idle="26.4" n2-idle="67.7" n1-max="102.7" n2-max="110.6" epr="2.12">
+<jet x="-33.757" y="2.7" z="0.687" mass="4567" thrust="25000" egt="625" tsfc="0.498" n1-idle="26.4" n2-idle="67.7" n1-max="102.7" n2-max="110.6" epr="1.59">
   <control-input axis="/controls/engines/engine[0]/throttle-fdm" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/reverser" control="REVERSE_THRUST"/>
   <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"/>
@@ -140,7 +140,7 @@ AoA really should be 3 degrees, but 4 works better for the FDM solution.
 <actionpt x="-35.0" y="2.7" z="0.687"/>
 </jet>
 
-<jet x="-33.757" y="-2.7" z="0.687" mass="4567" thrust="28000" egt="625" tsfc="0.498" n1-idle="26.4" n2-idle="67.7" n1-max="102.7" n2-max="110.6" epr="2.12">
+<jet x="-33.757" y="-2.7" z="0.687" mass="4567" thrust="25000" egt="625" tsfc="0.498" n1-idle="26.4" n2-idle="67.7" n1-max="102.7" n2-max="110.6" epr="1.59">
   <control-input axis="/controls/engines/engine[1]/throttle-fdm" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/reverser" control="REVERSE_THRUST"/>
   <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"/>
