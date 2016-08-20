@@ -5,17 +5,17 @@
 
 <!--
 Specifications:
-Empty:		78000 lbs
+Empty:		88000 lbs
 Zero Fuel:	118000 lbs
 Max Fuel load:	39128 lbs
 Max Payload:	40112 lbs
-Max Take-Off:	149500 lbs
+Max Take-Off:	156000 lbs
 Max Land:	128000 lbs
 Cruise:		Mach 0.76 @ 35000'
 -->
 
 
-<airplane mass="78000">
+<airplane mass="88000">
 
 
 <!-- Approach configuration -->
@@ -38,8 +38,8 @@ AoA really should be 3 degrees, but 4 works better for the FDM solution.
 
 
 <cruise speed="482" alt="35000" fuel="0.59">
-  <control-setting axis="/controls/engines/engine[0]/throttle-fdm" value="0.9"/>
-  <control-setting axis="/controls/engines/engine[1]/throttle-fdm" value="0.9"/>
+  <control-setting axis="/controls/engines/engine[0]/throttle-fdm" value="0.86"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle-fdm" value="0.86"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
   <control-setting axis="/controls/flight/slats" value="0.0"/>
   <control-setting axis="/controls/gear/gear-down" value="0"/>
@@ -129,7 +129,7 @@ AoA really should be 3 degrees, but 4 works better for the FDM solution.
   <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
 </vstab>
 
-<!-- IAE V2500 D5 --> -->
+<!-- IAE V2500 D5 -->
 
 
 <jet x="-33.757" y="2.7" z="0.687" mass="4567" thrust="25000" egt="625" tsfc="0.498" n1-idle="26.4" n2-idle="67.7" n1-max="102.7" n2-max="110.6" epr="1.59">
