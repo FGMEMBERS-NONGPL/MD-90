@@ -10484,7 +10484,7 @@ name "Fuselage"
 loc 0 0 -0
 data 8
 Fuselage
-texture "..\..\..\..\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage.rgb"
+texture "txt_fuselage.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 717
