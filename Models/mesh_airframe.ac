@@ -31,7 +31,7 @@ name "AilTabControlL"
 loc 0 0 -0
 data 14
 AilTabControlL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -113,7 +113,7 @@ name "AilTabControlR"
 loc 0 0 -0
 data 14
 AilTabControlR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -195,7 +195,7 @@ name "AilTabTrimL"
 loc 0 0 -0
 data 11
 AilTabTrimL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -277,7 +277,7 @@ name "AilTabTrimR"
 loc 0 0 -0
 data 11
 AilTabTrimR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -359,7 +359,7 @@ name "AileronL"
 loc 0 0 -0
 data 8
 AileronL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 111
@@ -1270,7 +1270,7 @@ name "AileronR"
 loc 0 0 -0
 data 8
 AileronR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 111
@@ -2181,7 +2181,7 @@ name "CTRLND.flare"
 loc 0 0 -0
 data 12
 CTRLND.flare
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\transparent.png"
+texture "transparent.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -2203,7 +2203,7 @@ name "CTRLND.spot"
 loc 0 0 -0
 data 11
 CTRLND.spot
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\light_spot.png"
+texture "light_spot.png"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 4
@@ -2225,7 +2225,7 @@ name "ElTabAntifloatL"
 loc 0 0 -0
 data 15
 ElTabAntifloatL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -2360,7 +2360,7 @@ name "ElTabAntifloatR"
 loc 0 0 -0
 data 15
 ElTabAntifloatR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -2495,7 +2495,7 @@ name "ElTabControlL"
 loc 0 0 -0
 data 13
 ElTabControlL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -2630,7 +2630,7 @@ name "ElTabControlR"
 loc 0 0 -0
 data 13
 ElTabControlR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -2765,7 +2765,7 @@ name "ElTabGearedL"
 loc 0 0 -0
 data 12
 ElTabGearedL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -2900,7 +2900,7 @@ name "ElTabGearedR"
 loc 0 0 -0
 data 12
 ElTabGearedR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -3035,7 +3035,7 @@ name "ElevatorL"
 loc 0 0 -0
 data 9
 ElevatorL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 188
@@ -4541,7 +4541,7 @@ name "ElevatorR"
 loc 0 0 -0
 data 9
 ElevatorR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 188
@@ -6047,7 +6047,7 @@ name "Engines"
 loc 0 0 -0
 data 7
 Engines
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 26
@@ -6248,7 +6248,7 @@ name "FlapDoorL"
 loc 0 0 -0
 data 9
 FlapDoorL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage_fairing.rgb"
+texture "txt_fuselage_fairing.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 39
@@ -6505,7 +6505,7 @@ name "FlapDoorR"
 loc 0 0 -0
 data 9
 FlapDoorR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage_fairing.rgb"
+texture "txt_fuselage_fairing.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 39
@@ -6762,7 +6762,7 @@ name "FlapGussetL"
 loc 0 0 -0
 data 11
 FlapGussetL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -6943,7 +6943,7 @@ name "FlapGussetR"
 loc 0 0 -0
 data 11
 FlapGussetR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -7124,7 +7124,7 @@ name "FlapHorns2InL"
 loc 0 0 -0
 data 13
 FlapHorns2InL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -7420,7 +7420,7 @@ name "FlapHorns2InR"
 loc 0 0 -0
 data 13
 FlapHorns2InR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 30
@@ -7716,7 +7716,7 @@ name "FlapHorns2OutL"
 loc 0 0 -0
 data 14
 FlapHorns2OutL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90
@@ -8582,7 +8582,7 @@ name "FlapHorns2OutR"
 loc 0 0 -0
 data 14
 FlapHorns2OutR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 90
@@ -9448,7 +9448,7 @@ name "FlapIn2L"
 loc 0 0 -0
 data 8
 FlapIn2L
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -9540,7 +9540,7 @@ name "FlapIn2R"
 loc 0 0 -0
 data 8
 FlapIn2R
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -9632,7 +9632,7 @@ name "FlapInL"
 loc 0 0 -0
 data 7
 FlapInL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -9799,7 +9799,7 @@ name "FlapInR"
 loc 0 0 -0
 data 7
 FlapInR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -9966,7 +9966,7 @@ name "FlapOut2L"
 loc 0 0 -0
 data 9
 FlapOut2L
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -10058,7 +10058,7 @@ name "FlapOut2R"
 loc 0 0 -0
 data 9
 FlapOut2R
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -10150,7 +10150,7 @@ name "FlapOutL"
 loc 0 0 -0
 data 8
 FlapOutL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -10317,7 +10317,7 @@ name "FlapOutR"
 loc 0 0 -0
 data 8
 FlapOutR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 20
@@ -16078,7 +16078,7 @@ name "FuselageOther"
 loc 0 0 -0
 data 13
 FuselageOther
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage.rgb"
+texture "txt_fuselage.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 40
@@ -16375,7 +16375,7 @@ name "LGDoorInL"
 loc 0 0 -0
 data 9
 LGDoorInL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage_fairing.rgb"
+texture "txt_fuselage_fairing.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 63
@@ -16734,7 +16734,7 @@ name "LGDoorInR"
 loc 0 0 -0
 data 9
 LGDoorInR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage_fairing.rgb"
+texture "txt_fuselage_fairing.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 63
@@ -17093,7 +17093,7 @@ name "LGDoorOutL"
 loc 0 0 -0
 data 10
 LGDoorOutL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -17175,7 +17175,7 @@ name "LGDoorOutR"
 loc 0 0 -0
 data 10
 LGDoorOutR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -17257,7 +17257,7 @@ name "LGLBraceLow"
 loc 0 0 -0
 data 11
 LGLBraceLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -17542,7 +17542,7 @@ name "LGLBraceUp"
 loc 0 0 -0
 data 10
 LGLBraceUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 60
@@ -18018,7 +18018,7 @@ name "LGLStrutLow"
 loc 0 0 -0
 data 11
 LGLStrutLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 88
@@ -18509,7 +18509,7 @@ name "LGLStrutUp"
 loc 0 0 -0
 data 10
 LGLStrutUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 161
@@ -19525,7 +19525,7 @@ name "LGLTires"
 loc 0 0 -0
 data 8
 LGLTires
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 454
@@ -23286,7 +23286,7 @@ name "LGLTorqueBarLow"
 loc 0 0 -0
 data 15
 LGLTorqueBarLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 24
@@ -23431,7 +23431,7 @@ name "LGLTorqueBarUp"
 loc 0 0 -0
 data 14
 LGLTorqueBarUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 24
@@ -23576,7 +23576,7 @@ name "LGNDoorAftL"
 loc 0 0 -0
 data 11
 LGNDoorAftL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage.rgb"
+texture "txt_fuselage.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 21
@@ -23697,7 +23697,7 @@ name "LGNDoorAftR"
 loc 0 0 -0
 data 11
 LGNDoorAftR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage.rgb"
+texture "txt_fuselage.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 21
@@ -23818,7 +23818,7 @@ name "LGNDoorForL"
 loc 0 0 -0
 data 11
 LGNDoorForL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage.rgb"
+texture "txt_fuselage.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -24011,7 +24011,7 @@ name "LGNDoorForR"
 loc 0 0 -0
 data 11
 LGNDoorForR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage.rgb"
+texture "txt_fuselage.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -24204,7 +24204,7 @@ name "LGNDrag"
 loc 0 0 -0
 data 7
 LGNDrag
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 16
@@ -24287,7 +24287,7 @@ name "LGNStrutLow"
 loc 0 0 -0
 data 11
 LGNStrutLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 88
@@ -24778,7 +24778,7 @@ name "LGNStrutUp"
 loc 0 0 -0
 data 10
 LGNStrutUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 168
@@ -25921,7 +25921,7 @@ name "LGNTires"
 loc 0 0 -0
 data 8
 LGNTires
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 324
@@ -28656,7 +28656,7 @@ name "LGNTorqueBarLow"
 loc 0 0 -0
 data 15
 LGNTorqueBarLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 24
@@ -28801,7 +28801,7 @@ name "LGNTorqueBarUp"
 loc 0 0 -0
 data 14
 LGNTorqueBarUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 24
@@ -28946,7 +28946,7 @@ name "LGRBraceLow"
 loc 0 0 -0
 data 11
 LGRBraceLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 36
@@ -29231,7 +29231,7 @@ name "LGRBraceUp"
 loc 0 0 -0
 data 10
 LGRBraceUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 60
@@ -29707,7 +29707,7 @@ name "LGRStrutLow"
 loc 0 0 -0
 data 11
 LGRStrutLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 88
@@ -30198,7 +30198,7 @@ name "LGRStrutUp"
 loc 0 0 -0
 data 10
 LGRStrutUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 161
@@ -31214,7 +31214,7 @@ name "LGRTires"
 loc 0 0 -0
 data 8
 LGRTires
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 454
@@ -34975,7 +34975,7 @@ name "LGRTorqueBarLow"
 loc 0 0 -0
 data 15
 LGRTorqueBarLow
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 24
@@ -35120,7 +35120,7 @@ name "LGRTorqueBarUp"
 loc 0 0 -0
 data 14
 LGRTorqueBarUp
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 24
@@ -35265,7 +35265,7 @@ name "LHLND.flare"
 loc 0 0 -0
 data 11
 LHLND.flare
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\transparent.png"
+texture "transparent.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -35287,7 +35287,7 @@ name "LHLND.spot"
 loc 0 0 -0
 data 10
 LHLND.spot
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\light_spot.png"
+texture "light_spot.png"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 4
@@ -35309,7 +35309,7 @@ name "RHLND.flare"
 loc 0 0 -0
 data 11
 RHLND.flare
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\transparent.png"
+texture "transparent.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -35331,7 +35331,7 @@ name "RHLND.spot"
 loc 0 0 -0
 data 10
 RHLND.spot
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\light_spot.png"
+texture "light_spot.png"
 texrep 1.000000 1.000000
 crease 79.999998
 numvert 4
@@ -35353,7 +35353,7 @@ name "Rudder"
 loc 0 0 -0
 data 6
 Rudder
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 88
@@ -36097,7 +36097,7 @@ name "RudderTabControl"
 loc 0 0 -0
 data 16
 RudderTabControl
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -36200,7 +36200,7 @@ name "SlatStrutsL"
 loc 0 0 -0
 data 11
 SlatStrutsL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_slatstruts.rgb"
+texture "txt_slatstruts.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 336
@@ -37135,7 +37135,7 @@ name "SlatStrutsR"
 loc 0 0 -0
 data 11
 SlatStrutsR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_slatstruts.rgb"
+texture "txt_slatstruts.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 336
@@ -38070,7 +38070,7 @@ name "SlatsL"
 loc 0 0 -0
 data 6
 SlatsL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 72
@@ -38673,7 +38673,7 @@ name "SlatsR"
 loc 0 0 -0
 data 6
 SlatsR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 72
@@ -39276,7 +39276,7 @@ name "SpoilerInL"
 loc 0 0 -0
 data 10
 SpoilerInL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -39368,7 +39368,7 @@ name "SpoilerInR"
 loc 0 0 -0
 data 10
 SpoilerInR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 10
@@ -39460,7 +39460,7 @@ name "SpoilerOutL"
 loc 0 0 -0
 data 11
 SpoilerOutL
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 15
@@ -39592,7 +39592,7 @@ name "SpoilerOutR"
 loc 0 0 -0
 data 11
 SpoilerOutR
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 15
@@ -39724,7 +39724,7 @@ name "StabFairing"
 loc 0 0 -0
 data 11
 StabFairing
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 60.000002
 numvert 96
@@ -40377,7 +40377,7 @@ name "Stabilizer"
 loc 0 0 -0
 data 10
 Stabilizer
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 184
@@ -41534,7 +41534,7 @@ name "VStabilizer"
 loc 0 0 -0
 data 11
 VStabilizer
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 277
@@ -43929,7 +43929,7 @@ name "WheelWellsMG"
 loc 0 0 -0
 data 12
 WheelWellsMG
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_hstab_gear.rgb"
+texture "txt_hstab_gear.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 150
@@ -45137,7 +45137,7 @@ name "Wing"
 loc 0 0 -0
 data 4
 Wing
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_wing.rgb"
+texture "txt_wing.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 814
@@ -51792,7 +51792,7 @@ name "WingFairing"
 loc 0 0 -0
 data 11
 WingFairing
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_fuselage_fairing.rgb"
+texture "txt_fuselage_fairing.rgb"
 texrep 1.000000 1.000000
 crease 45.000001
 numvert 434
