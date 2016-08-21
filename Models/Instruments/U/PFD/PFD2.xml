@@ -399,6 +399,21 @@ Syd Adams
             <entry><ind>-80</ind><dep>-0.0510</dep></entry>
         </interpolation>
     </animation-->
+	
+    <animation>
+        <type>select</type>
+        <object-name>SpeedTarget</object-name>
+        <condition>
+			<!--less-than>
+   				<property>instrumentation/pfd/speed-trend-up</property>
+				<value>0.239</value>
+			</less-than-->
+			<equals>
+			<property>items/unused</property>
+			<value>999</value>
+			</equals>
+		</condition>
+    </animation>
 
     <!--animation>
         <object-name>StallSpeedInd</object-name>
@@ -2382,20 +2397,28 @@ Syd Adams
         <type>select</type>
         <object-name>speedtrend.up</object-name>
         <condition>
-			<less-than>
+			<!--less-than>
    				<property>instrumentation/pfd/speed-trend-up</property>
 				<value>0.239</value>
-			</less-than>
+			</less-than-->
+			<equals>
+			<property>items/unused</property>
+			<value>999</value>
+			</equals>
 		</condition>
     </animation>
     <animation>
         <type>select</type>
         <object-name>speedtrend.down</object-name>
         <condition>
-			<greater-than>
+			<!--greater-than>
 				<property>instrumentation/pfd/speed-trend-down</property>
 				<value>-0.239</value>
-			</greater-than>
+			</greater-than-->
+			<equals>
+			<property>items/unused</property>
+			<value>999</value>
+			</equals>
 		</condition>
     </animation>
 </PropertyList>
