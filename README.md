@@ -15,7 +15,8 @@ See AUTHORS&COPYING.txt
 * FL2070 for sounds.
 
 ## What's in the box?
-* MD-90
+* MD-90 (Standard Flightdeck)
+* MD-90 (Upgraded Flightdeck)
 
 ## Other MD-90s
 * None!
