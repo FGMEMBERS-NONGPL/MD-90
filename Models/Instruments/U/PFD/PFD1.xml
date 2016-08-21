@@ -869,6 +869,17 @@ Syd Adams
         </axis>
         <factor>0.000142</factor>
     </animation>
+	
+    <animation>
+        <type>select</type>
+        <object-name>AltitudeCursor</object-name>
+        <condition>
+			<equals>
+			<property>items/unused</property>
+			<value>999</value>
+			</equals>
+		</condition>
+    </animation>
 
 <!-- Alt Ind -->
     <animation>
