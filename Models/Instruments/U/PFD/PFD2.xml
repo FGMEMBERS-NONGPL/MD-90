@@ -1562,7 +1562,7 @@ Syd Adams
         <axis-alignment>yz-plane</axis-alignment>
         <type type="string">number-value</type>
         <format type="string">%2.0f</format>
-        <property>/it-autoflight/settings/target-altitude-ft</property>
+        <property>/it-autoflight/settings/target-altitude-ft-actual</property>
         <font>helvetica_bold.txf</font>
         <character-size>0.0095</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -1583,7 +1583,7 @@ Syd Adams
         <axis-alignment>yz-plane</axis-alignment>
         <type type="string">number-value</type>
         <format type="string">%03.0f</format>
-        <property>/it-autoflight/settings/target-altitude-ft</property>
+        <property>/it-autoflight/settings/target-altitude-ft-actual</property>
         <font>helvetica_bold.txf</font>
         <character-size>0.0095</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
