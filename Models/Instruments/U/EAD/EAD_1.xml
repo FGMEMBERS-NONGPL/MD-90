@@ -123,7 +123,7 @@
     	  <animation>
     <type>rotate</type>
 		<object-name>egt.1</object-name>
-    <property>engines/engine[0]/egt-degf</property>
+    <property>engines/engine[0]/egt-actual</property>
 <interpolation>
 <entry><ind>0</ind><dep>0</dep></entry>
 <entry><ind>800</ind><dep>180</dep></entry>
@@ -262,7 +262,7 @@
     	  <animation>
     <type>rotate</type>
 		<object-name>egt.2</object-name>
-    <property>engines/engine[1]/egt-degf</property>
+    <property>engines/engine[1]/egt-actual</property>
 <interpolation>
 <entry><ind>0</ind><dep>0</dep></entry>
 <entry><ind>800</ind><dep>180</dep></entry>
@@ -539,7 +539,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
     <format type="string">%2.0f</format>
-    <property>engines/engine[0]/egt-degf</property>
+    <property>engines/engine[0]/egt-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -556,7 +556,7 @@
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
     <format type="string">%2.0f</format>
-    <property>engines/engine[1]/egt-degf</property>
+    <property>engines/engine[1]/egt-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
