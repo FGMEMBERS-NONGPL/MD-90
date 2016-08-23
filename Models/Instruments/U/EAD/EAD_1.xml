@@ -607,8 +607,8 @@
 		<alignment>right-center</alignment>
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
-    <format type="string">%4.1f</format>
-    <property>engines/engine[0]/fuel-flow-gph</property>
+    <format type="string">%2.0f</format>
+    <property>engines/engine[0]/fuel-flow-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -624,8 +624,8 @@
 		<alignment>right-center</alignment>
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
-    <format type="string">%4.1f</format>
-    <property>engines/engine[1]/fuel-flow-gph</property>
+    <format type="string">%2.0f</format>
+    <property>engines/engine[1]/fuel-flow-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.007</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
