@@ -40,7 +40,7 @@
 
   <hrule/>
 
-   <!--checkbox>
+   <checkbox>
       <halign>left</halign>
       <label>Fasten Seatbelts</label>
       <property>/controls/switches/seatbelt-sign</property>
@@ -122,16 +122,6 @@
       </binding>
     </checkbox>
 
-    <checkbox>
-      <halign>left</halign>
-      <label>Before Landing</label>
-      <property>/controls/switches/beforeland</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>/controls/switches/beforeland</property>
-      </binding>
-    </checkbox>
-
   <checkbox>
       <halign>left</halign>
       <label>After Landing</label>
@@ -164,15 +154,6 @@
         <property>/controls/switches/turbulence</property>
       </binding>
     </checkbox>
-    <checkbox>
-      <halign>left</halign>
-      <label>Emergency</label>
-      <property>/controls/switches/emergency</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>/controls/switches/emergency</property>
-      </binding>
-    </checkbox-->
 
 
 

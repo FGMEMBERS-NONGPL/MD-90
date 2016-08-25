@@ -72,7 +72,7 @@
 		<object-name>Off</object-name>
 		<condition>
 			<less-than>
-				<property>systems/electrical/outputs/efis</property>
+				<property>systems/electrical/bus/dcL</property>
 				<value>15</value>
 			</less-than>
 		</condition>
@@ -86,7 +86,7 @@
   <object-name>ATKnob</object-name>
   <condition>
     <equals>
-      <property>/controls/it2/apthrmode</property>
+      <property>/it-autoflight/apthrmode</property>
       <value>0</value>
     </equals>
   </condition>
@@ -98,7 +98,7 @@
   <object-name>ATKnobMach</object-name>
   <condition>
     <equals>
-      <property>/controls/it2/apthrmode</property>
+      <property>/it-autoflight/apthrmode</property>
       <value>1</value>
     </equals>
   </condition>
@@ -109,7 +109,7 @@
 <animation>
   <type>textranslate</type>
   <object-name>ATDigit1</object-name>
-  <property>/autopilot/settings/target-speed-kt</property>
+  <property>/it-autoflight/settings/target-speed-kt</property>
   <factor>0.001</factor>
   <step>100</step>
   <axis>
@@ -121,7 +121,7 @@
 <animation>
   <type>textranslate</type>
   <object-name>ATDigit2</object-name>
-  <property>/autopilot/settings/target-speed-kt</property>
+  <property>/it-autoflight/settings/target-speed-kt</property>
   <factor>0.01</factor>
   <step>10</step>
   <axis>
@@ -133,7 +133,7 @@
 <animation>
   <type>textranslate</type>
   <object-name>ATDigit3</object-name>
-  <property>/autopilot/settings/target-speed-kt</property>
+  <property>/it-autoflight/settings/target-speed-kt</property>
   <factor>0.1</factor>
   <step>1</step>
   <axis>
@@ -148,7 +148,7 @@
 <animation>
   <type>textranslate</type>
   <object-name>MachDigit1</object-name>
-  <property>/autopilot/settings/target-mach</property>
+  <property>/it-autoflight/settings/target-mach</property>
   <factor>1.0</factor>
   <step>0.1</step>
   <axis>
@@ -161,7 +161,7 @@
 <animation>
   <type>textranslate</type>
   <object-name>MachDigit2</object-name>
-  <property>/autopilot/settings/target-mach</property>
+  <property>/it-autoflight/settings/target-mach</property>
   <factor>10</factor>
   <step>.01</step>
   <axis>
@@ -177,7 +177,7 @@
   <type>select</type>
   <object-name>ATSwitchOn</object-name>
   <condition>
-    <property>/controls/it2/at_mastersw</property>
+    <property>/it-autoflight/at_mastersw</property>
   </condition>
 </animation>
 <animation>
@@ -188,7 +188,7 @@
     <repeatable>false</repeatable>
 			<binding>
 			<command>property-assign</command>
-			<property>/controls/it2/at_mastersw</property>
+			<property>/it-autoflight/at_mastersw</property>
 			<value>0</value>
 			</binding>
   </action>
@@ -198,7 +198,7 @@
   <type>select</type>
   <object-name>ATSwitchOff</object-name>
   <condition>
-    <not><property>/controls/it2/at_mastersw</property></not>
+    <not><property>/it-autoflight/at_mastersw</property></not>
   </condition>
 </animation>
 <animation>
@@ -209,7 +209,7 @@
     <repeatable>false</repeatable>
 			<binding>
 			<command>property-assign</command>
-			<property>/controls/it2/at_mastersw</property>
+			<property>/it-autoflight/at_mastersw</property>
 			<value>1</value>
 			</binding>
   </action>
@@ -221,7 +221,7 @@
   <type>select</type>
   <object-name>APSwitchOn</object-name>
   <condition>
-    <property>/controls/it2/ap_mastersw</property>
+    <property>/it-autoflight/ap_mastersw</property>
   </condition>
 </animation>
 <animation>
@@ -232,7 +232,7 @@
     <repeatable>false</repeatable>
     <binding>
 	<command>property-assign</command>
-        <property>/controls/it2/ap_mastersw</property>
+        <property>/it-autoflight/ap_mastersw</property>
 	<value>0</value>
     </binding>
   </action>
@@ -242,7 +242,7 @@
   <type>select</type>
   <object-name>APSwitchOff</object-name>
   <condition>
-    <not><property>/controls/it2/ap_mastersw</property></not>
+    <not><property>/it-autoflight/ap_mastersw</property></not>
   </condition>
 </animation>
 <animation>
@@ -253,9 +253,53 @@
     <repeatable>false</repeatable>
     <binding>
 	<command>property-assign</command>
-        <property>/controls/it2/ap_mastersw</property>
+        <property>/it-autoflight/ap_mastersw</property>
 	<value>1</value>
     </binding>
+  </action>
+</animation>
+
+<!--  Flight Director Switch -->
+
+<animation>
+  <type>select</type>
+  <object-name>FDSwitchOn</object-name>
+  <condition>
+    <property>/it-autoflight/fd_mastersw</property>
+  </condition>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>FDSwitchOn</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+			<binding>
+			<command>property-assign</command>
+			<property>/it-autoflight/fd_mastersw</property>
+			<value>0</value>
+			</binding>
+  </action>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>FDSwitchOff</object-name>
+  <condition>
+    <not><property>/it-autoflight/fd_mastersw</property></not>
+  </condition>
+</animation>
+<animation>
+  <type>pick</type>
+  <object-name>FDSwitchOff</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+			<binding>
+			<command>property-assign</command>
+			<property>/it-autoflight/fd_mastersw</property>
+			<value>1</value>
+			</binding>
   </action>
 </animation>
 
@@ -264,7 +308,7 @@
 <animation>
   <type>rotate</type>
   <object-name>ATKnob</object-name>
-  <property>/autopilot/settings/target-speed-kt</property>
+  <property>/it-autoflight/settings/target-speed-kt</property>
   <interpolation>
     <entry><ind>  0</ind><dep>  0</dep></entry>
     <entry><ind>300</ind><dep>720</dep></entry>
@@ -287,10 +331,10 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/autopilot/settings/target-speed-kt</property>
+      <property>/it-autoflight/settings/target-speed-kt</property>
       <step>1</step>
       <min>0</min>
-      <max>300</max>
+      <max>330</max>
       <wrap>false</wrap>
     </binding>
   </action>
@@ -303,10 +347,10 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/autopilot/settings/target-speed-kt</property>
+      <property>/it-autoflight/settings/target-speed-kt</property>
       <step>-1</step>
       <min>0</min>
-      <max>300</max>
+      <max>330</max>
       <wrap>false</wrap>
     </binding>
   </action>
@@ -320,7 +364,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/autopilot/settings/target-speed-kt</property>
+      <property>/it-autoflight/settings/target-speed-kt</property>
       <step>10</step>
       <min>0</min>
       <max>320</max>
@@ -336,7 +380,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/autopilot/settings/target-speed-kt</property>
+      <property>/it-autoflight/settings/target-speed-kt</property>
       <step>-10</step>
       <min>0</min>
       <max>320</max>
@@ -350,7 +394,7 @@
 <animation>
   <type>rotate</type>
   <object-name>ATKnobMach</object-name>
-  <property>/autopilot/settings/target-mach</property>
+  <property>/it-autoflight/settings/target-mach</property>
   <interpolation>
     <entry><ind>   0</ind><dep>  0</dep></entry>
     <entry><ind>0.82</ind><dep>720</dep></entry>
@@ -372,7 +416,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/autopilot/settings/target-mach</property>
+      <property>/it-autoflight/settings/target-mach</property>
       <step>0.01</step>
       <min>0.60</min>
       <max>0.92</max>
@@ -388,7 +432,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/autopilot/settings/target-mach</property>
+      <property>/it-autoflight/settings/target-mach</property>
       <step>-0.01</step>
       <min>0.60</min>
       <max>0.92</max>
@@ -426,7 +470,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
-      <script>MD88.lights_beacon_toggle();</script>
+      <script>MD90.lights_beacon_toggle();</script>
     </binding>
   </action>
 </animation>
@@ -458,7 +502,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
-      <script>MD88.lights_nav_toggle();</script>
+      <script>MD90.lights_nav_toggle();</script>
     </binding>
   </action>
 </animation>
@@ -1145,7 +1189,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>AltDigit1</object-name>
-        <property>autopilot/settings/target-altitude-ft</property>
+        <property>it-autoflight/settings/target-altitude-ft</property>
         <factor>0.00001</factor>
         <step>10000</step>
         <axis>
@@ -1158,7 +1202,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>AltDigit2</object-name>
-        <property>autopilot/settings/target-altitude-ft</property>
+        <property>it-autoflight/settings/target-altitude-ft</property>
         <factor>0.0001</factor>
         <step>1000</step>
         <axis>
@@ -1171,7 +1215,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>AltDigit3</object-name>
-        <property>autopilot/settings/target-altitude-ft</property>
+        <property>it-autoflight/settings/target-altitude-ft</property>
         <factor>0.001</factor>
         <step>100</step>
         <axis>
@@ -1184,7 +1228,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>AltDigit4</object-name>
-        <property>autopilot/settings/target-altitude-ft</property>
+        <property>it-autoflight/settings/target-altitude-ft</property>
         <factor>0.01</factor>
         <step>10</step>
         <axis>
@@ -1197,7 +1241,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>AltDigit5</object-name>
-        <property>autopilot/settings/target-altitude-ft</property>
+        <property>it-autoflight/settings/target-altitude-ft</property>
         <factor>0.1</factor>
         <step>1</step>
         <axis>
@@ -1211,7 +1255,7 @@
 <animation>
         <type>rotate</type>
         <object-name>AltKnob</object-name>
-        <property>autopilot/settings/target-altitude-ft</property>
+        <property>it-autoflight/settings/target-altitude-ft</property>
         <factor>100</factor>
 <axis>
     <x1-m>2.498584</x1-m>
@@ -1231,7 +1275,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/target-altitude-ft</property>
+      <property>it-autoflight/settings/target-altitude-ft</property>
       <step>100</step>
       <min>0</min>
       <max>40000</max>
@@ -1247,7 +1291,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/target-altitude-ft</property>
+      <property>it-autoflight/settings/target-altitude-ft</property>
       <step>-100</step>
       <min>0</min>
       <max>40000</max>
@@ -1264,7 +1308,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/target-altitude-ft</property>
+      <property>it-autoflight/settings/target-altitude-ft</property>
       <step>1000</step>
       <min>0</min>
       <max>40000</max>
@@ -1280,7 +1324,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/target-altitude-ft</property>
+      <property>it-autoflight/settings/target-altitude-ft</property>
       <step>-1000</step>
       <min>0</min>
       <max>40000</max>
@@ -1298,7 +1342,7 @@
 	    <repeatable>true</repeatable>
             <binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apvertset</property>
+				<property>/it-autoflight/apvertset</property>
 				<value>0</value>
 			</binding>
         </action>
@@ -1315,7 +1359,7 @@
 	<object-name>VS.led4</object-name>
         <condition>
             <less-than>
-                <property>autopilot/settings/vertical-speed-fpm</property>
+                <property>it-autoflight/settings/vertical-speed-fpm</property>
                 <value>0</value>
             </less-than>
         </condition>
@@ -1326,7 +1370,7 @@
 <animation>
         <type>textranslate</type>
         <object-name>VS.led1</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
         <factor>-0.0001</factor>
 	<bias>999</bias>
         <step>1000</step>
@@ -1342,7 +1386,7 @@
  <animation>
         <type>textranslate</type>
         <object-name>VS.led2</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
 	 <!--bias>10</bias-->
         <factor>0.001</factor>
         <step>-100</step>
@@ -1356,7 +1400,7 @@
 <animation>
         <type>textranslate</type>
         <object-name>VS.led3</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
 	<!--bias>1</bias-->
         <factor>0.01</factor>
         <step>-10</step>
@@ -1370,7 +1414,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>VS.led4</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
         <factor>0.1</factor>
         <step>-1</step>
         <axis>
@@ -1393,7 +1437,7 @@
 	<object-name>VS.led4.001</object-name>
         <condition>
             <greater-than-equals>
-                <property>autopilot/settings/vertical-speed-fpm</property>
+                <property>it-autoflight/settings/vertical-speed-fpm</property>
                 <value>0</value>
             </greater-than-equals>
         </condition>
@@ -1405,7 +1449,7 @@
 <animation>
         <type>textranslate</type>
         <object-name>VS.led1.001</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
         <factor>0.0001</factor>
         <step>1000</step>
         <axis>
@@ -1418,7 +1462,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>VS.led2.001</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
         <factor>0.001</factor>
         <step>100</step>
         <axis>
@@ -1431,7 +1475,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>VS.led3.001</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
         <factor>0.01</factor>
         <step>10</step>
         <axis>
@@ -1444,7 +1488,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>VS.led4.001</object-name>
-        <property>autopilot/settings/vertical-speed-fpm</property>
+        <property>it-autoflight/settings/vertical-speed-fpm</property>
         <factor>0.1</factor>
         <step>1</step>
         <axis>
@@ -1467,7 +1511,7 @@
 	    <repeatable>true</repeatable>
             <binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apvertset</property>
+				<property>/it-autoflight/apvertset</property>
 				<value>1</value>
 			</binding>
         </action>
@@ -1482,7 +1526,7 @@
             <repeatable>true</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>autopilot/settings/vertical-speed-fpm</property>
+                <property>it-autoflight/settings/vertical-speed-fpm</property>
                 <step>-100</step>
                 <min>-8000</min>
                 <max>6000</max>
@@ -1499,7 +1543,7 @@
             <repeatable>true</repeatable>
             <binding>
             <command>property-adjust</command>
-            <property>autopilot/settings/vertical-speed-fpm</property>
+            <property>it-autoflight/settings/vertical-speed-fpm</property>
             <step>100</step>
             <min>-8000</min>
             <max>6000</max>
@@ -1519,8 +1563,24 @@
 	    <repeatable>true</repeatable>
             <binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apvertset</property>
+				<property>/it-autoflight/apvertset</property>
 				<value>2</value>
+			</binding>
+        </action>
+    </animation>
+	
+<!-- FLCH -->
+
+    <animation>
+        <type>pick</type>
+	<object-name>flchOff</object-name>
+        <action>
+            <button>0</button>
+	    <repeatable>true</repeatable>
+            <binding>
+				<command>property-assign</command>
+				<property>/it-autoflight/apvertset</property>
+				<value>4</value>
 			</binding>
         </action>
     </animation>
@@ -1531,7 +1591,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>HdgDigit1</object-name>
-        <property>autopilot/settings/heading-bug-deg</property>
+        <property>it-autoflight/settings/heading-bug-deg</property>
         <factor>0.001</factor>
         <step>100</step>
         <axis>
@@ -1544,7 +1604,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>HdgDigit2</object-name>
-        <property>autopilot/settings/heading-bug-deg</property>
+        <property>it-autoflight/settings/heading-bug-deg</property>
         <factor>0.01</factor>
         <step>10</step>
         <axis>
@@ -1557,7 +1617,7 @@
     <animation>
         <type>textranslate</type>
         <object-name>HdgDigit3</object-name>
-        <property>autopilot/settings/heading-bug-deg</property>
+        <property>it-autoflight/settings/heading-bug-deg</property>
         <factor>0.1</factor>
         <step>1</step>
         <axis>
@@ -1572,7 +1632,7 @@
         <type>rotate</type>
         <object-name>HdgKnob</object-name>
         <object-name>hdgOff</object-name>
-        <property>autopilot/settings/heading-bug-deg</property>
+        <property>it-autoflight/settings/heading-bug-deg</property>
         <factor>100</factor>
 <axis>
     <x1-m>2.498584</x1-m>
@@ -1592,7 +1652,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/heading-bug-deg</property>
+      <property>it-autoflight/settings/heading-bug-deg</property>
       <step>1</step>
       <min>1</min>
       <max>361</max>
@@ -1608,7 +1668,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/heading-bug-deg</property>
+      <property>it-autoflight/settings/heading-bug-deg</property>
       <step>-1</step>
       <min>1</min>
       <max>361</max>
@@ -1625,7 +1685,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/heading-bug-deg</property>
+      <property>it-autoflight/settings/heading-bug-deg</property>
       <step>10</step>
       <min>1</min>
       <max>361</max>
@@ -1641,7 +1701,7 @@
     <repeatable>true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>autopilot/settings/heading-bug-deg</property>
+      <property>it-autoflight/settings/heading-bug-deg</property>
       <step>-10</step>
       <min>1</min>
       <max>361</max>
@@ -1659,7 +1719,7 @@
 			<repeatable>true</repeatable>
             <binding>
 				<command>property-assign</command>
-				<property>/controls/it2/aplatset</property>
+				<property>/it-autoflight/aplatset</property>
 				<value>0</value>
 			</binding>
         </action>
@@ -1675,7 +1735,7 @@
 	    <repeatable>true</repeatable>
             <binding>
 				<command>property-assign</command>
-				<property>/controls/it2/aplatset</property>
+				<property>/it-autoflight/aplatset</property>
 				<value>1</value>
 			</binding>
         </action>
@@ -1690,7 +1750,7 @@
 	    <repeatable>true</repeatable>
             <binding>
 				<command>property-assign</command>
-				<property>/controls/it2/aplatset</property>
+				<property>/it-autoflight/aplatset</property>
 				<value>2</value>
 			</binding>
         </action>
@@ -1706,7 +1766,7 @@
 			<repeatable>true</repeatable>
 				<binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apthrset</property>
+				<property>/it-autoflight/apthrmode</property>
 				<value>0</value>
 				</binding>
         </action>
@@ -1722,7 +1782,7 @@
 			<repeatable>true</repeatable>
 				<binding>
 				<command>property-assign</command>
-				<property>/controls/it2/apthrset</property>
+				<property>/it-autoflight/apthrmode</property>
 				<value>1</value>
 				</binding>
         </action>

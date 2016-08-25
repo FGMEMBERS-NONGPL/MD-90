@@ -46,7 +46,7 @@
 		<object-name>Off</object-name>
 		<condition>
 			<less-than>
-				<property>systems/electrical/outputs/efis</property>
+				<property>systems/electrical/bus/dcL</property>
 				<value>15</value>
 			</less-than>
 		</condition>
@@ -64,6 +64,57 @@
   </emission>
 </animation>
 -->
+
+	<!-- Flight Director System -->
+    <animation>
+        <type>select</type>
+        <object-name>FDroll_rembrandt</object-name>
+        <object-name>FDpitch_rembrandt</object-name>
+        <condition>
+			<and>
+				<property>sim/rendering/rembrandt/enabled</property>
+				<property>/it-autoflight/fd_master</property>
+			</and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>FDroll</object-name>
+        <object-name>FDpitch</object-name>
+        <condition>
+			<and>
+				<not><property>sim/rendering/rembrandt/enabled</property></not>
+				<property>/it-autoflight/fd_master</property>
+			</and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>FDpitch</object-name>
+        <object-name>FDpitch_rembrandt</object-name>
+        <property>/it-autoflight/fd/pitch-bar</property>
+        <factor>0.0012</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>FDroll</object-name>
+        <object-name>FDroll_rembrandt</object-name>
+        <property>/it-autoflight/fd/roll-bar</property>
+        <factor>0.0007</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
 <animation>
   <type>material</type>
@@ -132,7 +183,7 @@
 		<condition>
 			<greater-than>
           <property>position/altitude-agl-ft</property>
-          <value>1505</value>
+          <value>2505</value>
           </greater-than>
   </condition>
 </animation>
@@ -201,9 +252,9 @@
   <object-name>GS.needle</object-name>
   <property>/instrumentation/nav/gs-needle-deflection</property>
   <interpolation>
-    <entry><ind>-10.0</ind><dep>-0.0125</dep></entry>
+    <entry><ind>-10.0</ind><dep>-0.0425</dep></entry>
     <entry><ind>  0.0</ind><dep>      0</dep></entry>
-    <entry><ind> 10.0</ind><dep> 0.0125</dep></entry>
+    <entry><ind> 10.0</ind><dep> 0.0425</dep></entry>
   </interpolation>
   <axis>
     <x>0.0</x>
@@ -215,60 +266,6 @@
     <y-m>0</y-m>
     <z-m>0.0</z-m>
   </center>
-</animation>
-
-<animation>
-    <type>textranslate</type>
-    <object-name>INH.1</object-name>
-    <property>instrumentation/altimeter/setting-inhg</property>
-    <factor>0.01</factor>
-    <step>10</step>
-    <axis>
-        <x>1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-</animation>
-
-<animation>
-    <type>textranslate</type>
-    <object-name>INH.2</object-name>
-    <property>instrumentation/altimeter/setting-inhg</property>
-    <factor>0.1</factor>
-    <step>1</step>
-    <axis>
-        <x>1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-</animation>
-
-<animation>
-    <type>textranslate</type>
-    <object-name>INH.3</object-name>
-    <property>instrumentation/altimeter/setting-inhg</property>
-    <factor>1.0</factor>
-    <step>0.1</step>
-    <bias>0.005</bias>  
-    <axis>
-        <x>1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-</animation>
-
-<animation>
-    <type>textranslate</type>
-    <object-name>INH.4</object-name>
-    <property>instrumentation/altimeter/setting-inhg</property>
-    <factor>10.0</factor>
-    <step>0.01</step>
-    <bias>0.005</bias>
-    <axis>
-        <x>1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
 </animation>
 
 <!-- DH -->
