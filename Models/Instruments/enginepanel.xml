@@ -37,8 +37,6 @@
   <object-name>N1RNeedle</object-name>
   <object-name>EGTLNeedle</object-name>
   <object-name>EGTRNeedle</object-name>
-  <object-name>N2LNeedle</object-name>
-  <object-name>N2RNeedle</object-name>
   <object-name>FFL1</object-name>
   <object-name>FFL2</object-name>
   <object-name>FFR1</object-name>
@@ -93,8 +91,6 @@
 	<object-name>N1RNeedle</object-name>
 	<object-name>EGTLNeedle</object-name>
 	<object-name>EGTRNeedle</object-name>
-	<object-name>N2LNeedle</object-name>
-	<object-name>N2RNeedle</object-name>
 	<condition>
 		<or>
 		<greater-than>
@@ -252,6 +248,29 @@
 </animation>
 
 <!-- N1 L -->
+
+<animation>
+  <type>select</type>
+  <object-name>N1L1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/n1-actual</property>
+	  <value>100</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>N1L2</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/n1-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
+</animation>
+
 <animation>
   <type>textranslate</type>
   <object-name>N1L1</object-name>
@@ -313,6 +332,28 @@
 
 <!-- EGT L -->
 <animation>
+  <type>select</type>
+  <object-name>EGTL1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/egt-actual</property>
+	  <value>100</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>EGTL2</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/egt-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
   <type>textranslate</type>
   <object-name>EGTL1</object-name>
   <property>/engines/engine[0]/egt-actual</property>
@@ -373,6 +414,28 @@
 
 <!-- N2 L -->
 <animation>
+  <type>select</type>
+  <object-name>N2L1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/n2-actual</property>
+	  <value>100</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>N2L2</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/n2-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
   <type>textranslate</type>
   <object-name>N2L1</object-name>
   <property>/engines/engine[0]/n2-actual</property>
@@ -411,27 +474,18 @@
   </axis>
 </animation>
 
+<!-- FF L -->
 <animation>
-  <type>rotate</type>
-  <object-name>N2LNeedle</object-name>
-  <property>/engines/engine[0]/n2-actual</property>
-  <interpolation>
-    <entry><ind>  0</ind><dep>  0</dep></entry>
-    <entry><ind>113</ind><dep>233</dep></entry>
-  </interpolation>
-  <center>
-    <x-m>0</x-m>
-    <y-m>-0.0293</y-m>
-    <z-m>-0.080</z-m>
-  </center>
-  <axis>
-    <x>-1</x>
-    <y>0</y>
-    <z>0</z>
-  </axis>
+  <type>select</type>
+  <object-name>FFL1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[0]/fuel-flow-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
 </animation>
 
-<!-- FF L -->
 <animation>
   <type>textranslate</type>
   <object-name>FFL1</object-name>
@@ -562,6 +616,28 @@
 
 <!-- N1 R -->
 <animation>
+  <type>select</type>
+  <object-name>N1R1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/n1-actual</property>
+	  <value>100</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>N1R2</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/n1-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
   <type>textranslate</type>
   <object-name>N1R1</object-name>
   <property>/engines/engine[1]/n1-actual</property>
@@ -621,6 +697,28 @@
 </animation>
 
 <!-- EGT R -->
+<animation>
+  <type>select</type>
+  <object-name>EGTR1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/egt-actual</property>
+	  <value>100</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>EGTR2</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/egt-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
+</animation>
+
 <animation>
   <type>textranslate</type>
   <object-name>EGTR1</object-name>
@@ -682,6 +780,28 @@
 
 <!-- N2 R -->
 <animation>
+  <type>select</type>
+  <object-name>N2R1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/n2-actual</property>
+	  <value>100</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>N2R2</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/n2-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
+</animation>
+
+<animation>
   <type>textranslate</type>
   <object-name>N2R1</object-name>
   <property>/engines/engine[1]/n2-actual</property>
@@ -720,27 +840,18 @@
   </axis>
 </animation>
 
+<!-- FF R -->
 <animation>
-  <type>rotate</type>
-  <object-name>N2RNeedle</object-name>
-  <property>/engines/engine[1]/n2-actual</property>
-  <interpolation>
-    <entry><ind>  0</ind><dep>  0</dep></entry>
-    <entry><ind>113</ind><dep>233</dep></entry>
-  </interpolation>
-  <center>
-    <x-m>0</x-m>
-    <y-m>0.0292</y-m>
-    <z-m>-0.0799</z-m>
-  </center>
-  <axis>
-    <x>-1</x>
-    <y>0</y>
-    <z>0</z>
-  </axis>
+  <type>select</type>
+  <object-name>FFR1</object-name>
+  <condition>
+	<greater-than>
+	  <property>/engines/engine[1]/fuel-flow-actual</property>
+	  <value>10</value>
+	</greater-than>
+  </condition>
 </animation>
 
-<!-- FF R -->
 <animation>
   <type>textranslate</type>
   <object-name>FFR1</object-name>
