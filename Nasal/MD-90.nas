@@ -107,12 +107,13 @@ setlistener("/sim/signals/fdm-initialized", func {
   var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-90/Systems/autopilot-dlg.xml");
   setprop("/engines/engine/oil-q", 14);
   setprop("/engines/engine[1]/oil-q", 13);
-  setprop("/controls/engines/eprlim", 151);
-  setlistener("engines/engine[0]/epr", func {
-    setprop("engines/engine[0]/eprx100", (getprop("engines/engine[0]/epr") * 100));
+  setprop("/controls/engines/eprlim", 1.49);
+  setprop("/controls/engines/eprlimx100", 149);
+  setlistener("engines/engine[0]/epr-actual", func {
+    setprop("engines/engine[0]/epr-actualx100", (getprop("engines/engine[0]/epr-actual") * 100));
   });
-  setlistener("engines/engine[1]/epr", func {
-  	setprop("engines/engine[1]/eprx100", (getprop("engines/engine[1]/epr") * 100));
+  setlistener("engines/engine[1]/epr-actual", func {
+  	setprop("engines/engine[1]/epr-actualx100", (getprop("engines/engine[1]/epr-actual") * 100));
   });
   MD90_Savedata();
 });
