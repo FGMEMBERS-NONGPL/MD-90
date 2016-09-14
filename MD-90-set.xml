@@ -70,10 +70,8 @@ McDonnell Douglas MD-90
   <!-- Flap detents -->
   <flaps>
     <setting>0.00</setting>
-    <setting>0.125</setting> <!-- 5 deg -->
     <setting>0.275</setting> <!-- 11 deg (standard takeoff) -->
     <setting>0.375</setting> <!-- 15 deg (standard takeoff)-->
-    <setting>0.5</setting>   <!-- 20 deg -->
     <setting>0.7</setting>   <!-- 28 deg (standard landing) -->
     <setting>1.00</setting>  <!-- 40 deg (standard landing) -->
   </flaps>
