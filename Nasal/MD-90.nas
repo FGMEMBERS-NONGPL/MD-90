@@ -105,6 +105,9 @@ setlistener("/sim/signals/fdm-initialized", func {
   itaf.ap_init();				# See autoflight.nas
   nd_init();					# See MD-90-efis.nas
   var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-90/Systems/autopilot-dlg.xml");
+  setprop("/it-autoflight/settings/retard-enable", 1);  # Enable or disable automatic autothrottle retard.
+  setprop("/it-autoflight/settings/retard-ft", 35);     # Add this to change the retard altitude, default is 50ft AGL.
+  setprop("/it-autoflight/settings/land-flap", 0.7);    # Define the landing flaps here. This is needed for autoland, and retard.
   setprop("/engines/engine/oil-q", 14);
   setprop("/engines/engine[1]/oil-q", 13);
   setprop("/controls/engines/eprlim", 1.49);
