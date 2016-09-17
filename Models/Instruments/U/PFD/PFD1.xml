@@ -199,7 +199,6 @@ Syd Adams
 	    <object-name>apofft</object-name>
         <condition>
 		<and>
-		<or>
 		<equals>
 		<property>/it-autoflight/ap_master</property>		
 		<value>0</value>
@@ -208,7 +207,6 @@ Syd Adams
 		<property>/it-autoflight/ap_master2</property>		
 		<value>0</value>
 		</equals>
-		</or>
 		<equals>
 		<property>/it-autoflight/apvertmode</property>		
 		<value>4</value>
@@ -240,7 +238,6 @@ Syd Adams
 	    <object-name>apofft1</object-name>
         <condition>
 		<and>
-		<or>
 		<equals>
 		<property>/it-autoflight/ap_master</property>		
 		<value>0</value>
@@ -249,7 +246,6 @@ Syd Adams
 		<property>/it-autoflight/ap_master2</property>		
 		<value>0</value>
 		</equals>
-		</or>
 		<not-equals>
 		<property>/it-autoflight/apvertmode</property>		
 		<value>4</value>
