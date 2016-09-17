@@ -37,6 +37,8 @@ http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 Any sounds and instruments used were under the GNU license.
 
+Soundpack by FL2070, under GPL 2.0 license
+
 The configuration for some views has been taken from Raptor, who offered them in the FG Forum.
 
 All this has been done for fun.
