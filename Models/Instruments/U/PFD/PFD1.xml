@@ -1837,10 +1837,10 @@ Syd Adams
         <object-name>VS-NEG</object-name-->
         <object-name>BARO-source</object-name>
         <object-name>Slat</object-name>
+        <object-name>Flap11</object-name>
         <object-name>Flap15</object-name>
         <object-name>Flap28</object-name>
-        <object-name>Flap35</object-name>
-        <object-name>Flap50</object-name>
+        <object-name>Flap40</object-name>
         <object-name>INHG</object-name>
         <object-name>HPA</object-name>
         <object-name>ASI-taxi</object-name>
@@ -2304,7 +2304,7 @@ Syd Adams
         </font-resolution>
     </text-->
 	
-    <!--text>
+    <text>
         <name>Slat</name>
         <offsets>
             <x-m>0.0025</x-m>
@@ -2322,16 +2322,47 @@ Syd Adams
             <width type="int">32</width>
             <height type="int">32</height>
         </font-resolution>
-    </text-->
+    </text>
 	
-	<!--animation>
+	<animation>
 		<type>select</type>
 		<object-name>Slat</object-name>
 		<condition>
 			<greater-than>
-				<property>/controls/flight/flaps</property>
+				<property>/controls/flight/slats</property>
 				<value>0.01</value>
 			</greater-than>
+		</condition>
+	</animation>
+	
+    <text>
+        <name>Flap11</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.086</y-m>
+            <z-m>-0.0580</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+		<type>literal</type>
+		<text>FLAPS 11</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+	
+	<animation>
+		<type>select</type>
+		<object-name>Flap11</object-name>
+		<condition>
+			<equals>
+				<property>/controls/flight/flaps</property>
+				<value>0.275</value>
+			</equals>
 		</condition>
 	</animation>
 	
@@ -2345,7 +2376,7 @@ Syd Adams
         <alignment>left-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
 		<type>literal</type>
-		<text>FLAPS 5</text>
+		<text>FLAPS 15</text>
         <font>helvetica_bold.txf</font>
         <character-size>0.006</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -2361,7 +2392,7 @@ Syd Adams
 		<condition>
 			<equals>
 				<property>/controls/flight/flaps</property>
-				<value>0.31</value>
+				<value>0.375</value>
 			</equals>
 		</condition>
 	</animation>
@@ -2392,44 +2423,13 @@ Syd Adams
 		<condition>
 			<equals>
 				<property>/controls/flight/flaps</property>
-				<value>0.58</value>
-			</equals>
-		</condition>
-	</animation>
-	
-    <text>
-        <name>Flap35</name>
-        <offsets>
-            <x-m>0.0025</x-m>
-            <y-m>-0.086</y-m>
-            <z-m>-0.0580</z-m>
-        </offsets>
-        <alignment>left-center</alignment>
-        <axis-alignment>yz-plane</axis-alignment>
-		<type>literal</type>
-		<text>FLAPS 35</text>
-        <font>helvetica_bold.txf</font>
-        <character-size>0.006</character-size>
-        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
-        <font-resolution>
-            <width type="int">32</width>
-            <height type="int">32</height>
-        </font-resolution>
-    </text>
-	
-	<animation>
-		<type>select</type>
-		<object-name>Flap35</object-name>
-		<condition>
-			<equals>
-				<property>/controls/flight/flaps</property>
 				<value>0.70</value>
 			</equals>
 		</condition>
 	</animation>
 	
     <text>
-        <name>Flap50</name>
+        <name>Flap40</name>
         <offsets>
             <x-m>0.0025</x-m>
             <y-m>-0.086</y-m>
@@ -2438,7 +2438,7 @@ Syd Adams
         <alignment>left-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
 		<type>literal</type>
-		<text>FLAPS 50</text>
+		<text>FLAPS 40</text>
         <font>helvetica_bold.txf</font>
         <character-size>0.006</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -2450,14 +2450,14 @@ Syd Adams
 
 	<animation>
 		<type>select</type>
-		<object-name>Flap50</object-name>
+		<object-name>Flap40</object-name>
 		<condition>
 			<equals>
 				<property>/controls/flight/flaps</property>
 				<value>1.00</value>
 			</equals>
 		</condition>
-	</animation-->
+	</animation>
 
     <animation>
         <object-name>speedtrend.up</object-name>
