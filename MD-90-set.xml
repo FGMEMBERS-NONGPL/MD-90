@@ -40,6 +40,9 @@ McDonnell Douglas MD-90
     <autopilot>
       <path>Aircraft/MD-90/Systems/it-autoflight.xml</path>
     </autopilot>
+    <autopilot>
+      <path>Aircraft/MD-90/Systems/it-autothrust.xml</path>
+    </autopilot>
     <property-rule n="101">
         <path>Aircraft/MD-90/Sounds/MD-90-sound-control.xml</path>
     </property-rule>
