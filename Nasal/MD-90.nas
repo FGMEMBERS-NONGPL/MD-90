@@ -110,8 +110,8 @@ setlistener("/sim/signals/fdm-initialized", func {
   setprop("/it-autoflight/settings/land-flap", 0.7);    # Define the landing flaps here. This is needed for autoland, and retard.
   setprop("/engines/engine/oil-q", 14);
   setprop("/engines/engine[1]/oil-q", 13);
-  setprop("/controls/engines/eprlim", 1.49);
-  setprop("/controls/engines/eprlimx100", 149);
+  setprop("/controls/engines/eprlim", 1.43);
+  setprop("/controls/engines/eprlimx100", 143);
   setlistener("engines/engine[0]/epr-actual", func {
     setprop("engines/engine[0]/epr-actualx100", (getprop("engines/engine[0]/epr-actual") * 100));
   });
