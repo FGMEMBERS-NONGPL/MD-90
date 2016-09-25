@@ -1213,7 +1213,7 @@ Syd Adams
         <alignment>center-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
 		<type type="string">text-value</type>
-		<format type="string">ALT HLD</format>
+		<format type="string">HOLD</format>
 		<property>autopilot/serviceable</property>
         <font>helvetica_bold.txf</font>
         <character-size>0.0075</character-size>
