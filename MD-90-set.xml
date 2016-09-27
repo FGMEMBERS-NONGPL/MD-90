@@ -160,14 +160,6 @@ For Manual Engine Start, see the checlists in the Help Menu.
             <script>MD90.eng_magicshutdown();</script>
           </binding>
         </item>
-		<item>
-			<name>retrofit</name>
-			<label>Toggle Retrofit</label>
-			<binding>
-				<command>property-toggle</command>
-				<property>/options/retrofit</property>
-			</binding>
-		</item>
         <item>
           <label>Livery Select</label>
           <binding>
