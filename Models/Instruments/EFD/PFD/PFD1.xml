@@ -1506,19 +1506,40 @@ Syd Adams
     </text>
 
     <text>
-        <name>dec-hgt</name>
+        <name>minsg</name>
         <offsets>
             <x-m>0.004</x-m>
-            <y-m>0.033</y-m>
+            <y-m>0.02</y-m>
             <z-m>-0.036</z-m>
         </offsets>
         <alignment>right-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
         <type type="string">number-value</type>
         <format type="string">%4.0f</format>
-        <property>instrumentation/efis/minimums</property>
+        <property>/instrumentation/mk-viii/inputs/arinc429/decision-height</property>
         <font>helvetica_bold.txf</font>
-        <character-size>0.005</character-size>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+	
+    <text>
+        <name>minsy</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.02</y-m>
+            <z-m>-0.036</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%4.0f</format>
+        <property>/instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
         <font-resolution>
             <width type="int">32</width>
@@ -1530,7 +1551,7 @@ Syd Adams
         <name>min-mode</name>
         <offsets>
             <x-m>0.004</x-m>
-            <y-m>0.035</y-m>
+            <y-m>0.022</y-m>
             <z-m>-0.036</z-m>
         </offsets>
         <alignment>left-center</alignment>
@@ -1538,13 +1559,46 @@ Syd Adams
         <type type="string">text-value</type>
         <property>instrumentation/efis/minimums-mode-text</property>
         <font>helvetica_bold.txf</font>
-        <character-size>0.004</character-size>
+        <character-size>0.007</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
         <font-resolution>
             <width type="int">32</width>
             <height type="int">32</height>
         </font-resolution>
     </text>
+	
+<animation>
+  <type>select</type>
+  <object-name>minsg</object-name>
+  <condition>
+    <and>
+      <greater-than>
+        <property>/instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+        <value>0</value>
+      </greater-than>
+      <greater-than>
+        <property>position/altitude-agl-ft</property>
+        <property>/instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+      </greater-than>
+    </and>
+  </condition>
+</animation>
+<animation>
+  <type>select</type>
+  <object-name>minsy</object-name>
+  <condition>
+    <and>
+      <greater-than>
+        <property>/instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+        <value>0</value>
+      </greater-than>
+      <less-than-equals>
+        <property>position/altitude-agl-ft</property>
+        <property>/instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+      </less-than-equals>
+    </and>
+  </condition>
+</animation>
 
 	<animation>
 		<type>textranslate</type>
@@ -1795,6 +1849,7 @@ Syd Adams
         <type>material</type>
         <object-name>LOC</object-name>
         <object-name>GS</object-name>
+		<object-name>minsg</object-name>
         <emission>
             <red>0</red>
             <green>0.8</green>
@@ -1930,7 +1985,7 @@ Syd Adams
 
     <animation>
         <type>material</type><!--yellow-->
-        <object-name>dec-hgt</object-name>
+        <object-name>minsy</object-name>
         <emission>
             <red>0.9</red>
             <green>0.7</green>

@@ -614,7 +614,7 @@ McDonnell Douglas MD-90
 
 	<model>
 		<name>PFD L</name>
-		<path>Aircraft/MD-90/Models/Instruments/U/PFD/PFD1.xml</path>
+		<path>Aircraft/MD-90/Models/Instruments/EFD/PFD/PFD1.xml</path>
 		<offsets>
 			<x-m>2.240</x-m>
 			<y-m>-0.632</y-m>
@@ -624,7 +624,7 @@ McDonnell Douglas MD-90
 	</model>
 	<model>
 		<name>ND L</name>
-		<path>Aircraft/MD-90/Models/Instruments/U/ND/ND_L.xml</path>
+		<path>Aircraft/MD-90/Models/Instruments/EFD/ND/ND_L.xml</path>
 		<offsets>
 			<x-m>2.235</x-m>
 			<y-m>-0.388</y-m>
@@ -634,7 +634,7 @@ McDonnell Douglas MD-90
 	</model>
 	<model>
 		<name>EAD 1</name>
-		<path>Aircraft/MD-90/Models/Instruments/U/EAD/EAD_1.xml</path>
+		<path>Aircraft/MD-90/Models/Instruments/EFD/EAD/EAD_1.xml</path>
 		<offsets>
 			<x-m>2.235</x-m>
 			<y-m>-0.141</y-m>
@@ -694,7 +694,7 @@ McDonnell Douglas MD-90
 
 	<model>
 		<name>PFD R</name>
-		<path>Aircraft/MD-90/Models/Instruments/U/PFD/PFD2.xml</path>
+		<path>Aircraft/MD-90/Models/Instruments/EFD/PFD/PFD2.xml</path>
 		<offsets>
 			<x-m>2.240</x-m>
 			<y-m>0.625</y-m>
@@ -704,7 +704,7 @@ McDonnell Douglas MD-90
 	</model>
 	<model>
 		<name>ND R</name>
-		<path>Aircraft/MD-90/Models/Instruments/U/ND/ND_R.xml</path>
+		<path>Aircraft/MD-90/Models/Instruments/EFD/ND/ND_R.xml</path>
 		<offsets>
 			<x-m>2.235</x-m>
 			<y-m>0.368</y-m>
@@ -714,7 +714,7 @@ McDonnell Douglas MD-90
 	</model>
 	<model>
 		<name>SD</name>
-		<path>Aircraft/MD-90/Models/Instruments/U/EAD/SD.xml</path>
+		<path>Aircraft/MD-90/Models/Instruments/EFD/EAD/SD.xml</path>
 		<offsets>
 			<x-m>2.235</x-m>
 			<y-m>0.101</y-m>
