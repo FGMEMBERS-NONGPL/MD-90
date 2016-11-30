@@ -3,6 +3,42 @@
 <PropertyList>
 
     <filter>
+        <name>EPR L</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <input> 
+            <expression>
+                <table>
+                    <property>/engines/engine[0]/n1-actual</property> 
+                    <entry><ind>    0</ind><dep>1.00</dep></entry>
+                    <entry><ind>   26</ind><dep>1.01</dep></entry>
+                    <entry><ind>110.6</ind><dep>1.55</dep></entry>
+                </table>
+            </expression>
+        </input>
+		<output>/engines/engine[0]/epr-actual</output>
+    </filter>
+	
+    <filter>
+        <name>EPR R</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <input> 
+            <expression>
+                <table>
+                    <property>/engines/engine[1]/n1-actual</property> 
+                    <entry><ind>    0</ind><dep>1.00</dep></entry>
+                    <entry><ind>   26</ind><dep>1.01</dep></entry>
+                    <entry><ind>110.6</ind><dep>1.55</dep></entry>
+                </table>
+            </expression>
+        </input>
+		<output>/engines/engine[1]/epr-actual</output>
+    </filter>
+
+    <filter>
         <name>EGT L</name>
         <type>gain</type>
         <gain>1</gain>
@@ -11,8 +47,7 @@
             <expression>
                 <table>
                     <property>/engines/engine[0]/egt-degf</property> 
-                    <entry><ind>0</ind><dep>0</dep></entry>
-                    <entry><ind>65</ind><dep>320</dep></entry>
+                    <entry><ind>55</ind><dep>302</dep></entry>
                     <entry><ind>725</ind><dep>665</dep></entry>
                 </table>
             </expression>
@@ -29,8 +64,7 @@
             <expression>
                 <table>
                     <property>/engines/engine[1]/egt-degf</property> 
-                    <entry><ind>0</ind><dep>0</dep></entry>
-                    <entry><ind>65</ind><dep>320</dep></entry>
+                    <entry><ind>55</ind><dep>302</dep></entry>
                     <entry><ind>725</ind><dep>665</dep></entry>
                 </table>
             </expression>
@@ -120,8 +154,8 @@
                 <table>
                     <property>/engines/engine[0]/egt-actual</property> 
                     <entry><ind>0</ind><dep>0</dep></entry>
-                    <entry><ind>320</ind><dep>63</dep></entry>
-                    <entry><ind>665</ind><dep>97</dep></entry>
+                    <entry><ind>302</ind><dep>63</dep></entry>
+                    <entry><ind>665</ind><dep>112</dep></entry>
                 </table>
             </expression>
         </input>
@@ -138,12 +172,38 @@
                 <table>
                     <property>/engines/engine[1]/egt-actual</property> 
                     <entry><ind>0</ind><dep>0</dep></entry>
-                    <entry><ind>320</ind><dep>63</dep></entry>
-                    <entry><ind>665</ind><dep>97</dep></entry>
+                    <entry><ind>302</ind><dep>63</dep></entry>
+                    <entry><ind>665</ind><dep>112</dep></entry>
                 </table>
             </expression>
         </input>
 		<output>/engines/engine[1]/oil-temp</output>
     </filter>
+	
+	<filter>
+		<name>Throttle L</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<initialize-to>output</initialize-to>
+		<input>
+			<property>/controls/engines/engine[0]/throttle-fdm</property>
+		</input>
+		<output>/controls/engines/engine[0]/throttle-lever</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.95</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Throttle R</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<initialize-to>output</initialize-to>
+		<input>
+			<property>/controls/engines/engine[1]/throttle-fdm</property>
+		</input>
+		<output>/controls/engines/engine[1]/throttle-lever</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.95</max-rate-of-change>
+	</filter>
 
 </PropertyList>

@@ -558,7 +558,7 @@ name "Intake"
 loc 0 0 -0
 data 6
 Intake
-texture "..\..\..\..\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 179.000000
 numvert 187
@@ -3249,7 +3249,7 @@ name "Nacelle"
 loc 0 0 -0
 data 7
 Nacelle
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 84
@@ -5023,7 +5023,7 @@ name "Reverser"
 loc 0 0 -0
 data 8
 Reverser
-texture "C:\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 97
@@ -6253,7 +6253,7 @@ name "Track"
 loc 0 0 -0
 data 5
 Track
-texture "..\..\..\..\Program Files\FlightGear\data\Aircraft\MD-90\Models\txt_vstab_engines.rgb"
+texture "txt_vstab_engines.rgb"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8

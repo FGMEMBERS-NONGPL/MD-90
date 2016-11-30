@@ -3,7 +3,28 @@ MATERIAL "DefaultWhite.001" rgb 0 0 0  amb 0 0 0  emis 0 0 0  spec 0 0 0  shi 64
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 0  trans 0
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 128  trans 0
 OBJECT world
-kids 20
+kids 21
+OBJECT poly
+name "RETD"
+loc 0.00147385 -0.00765654 0.101835
+data 8
+Mesh.005
+texture "apindicator9.rgb"
+crease 30.000000
+numvert 4
+0 0.00452118 -0.0382164
+0 0.00452118 -0.0592887
+0 0.0180847 -0.0382164
+0 0.0180847 -0.0592887
+numsurf 1
+SURF 0x10
+mat 2
+refs 4
+2 0.914898 0.0105589
+0 0.98386 0.0105589
+1 0.98386 0.102508
+3 0.914898 0.102508
+kids 0
 OBJECT poly
 name "CLMP"
 loc 0.0014865 -0.0064276 0.0532051
@@ -117,27 +138,6 @@ refs 4
 3 0.879687 0.55
 0 0.979688 0.55
 1 0.979688 0.45
-kids 0
-OBJECT poly
-name "face"
-loc 0.00145734 0.00675381 -0.00391782
-data 10
-enginepane
-texture "apindicator.png"
-crease 30.000002
-numvert 4
-0 0.0332406 0.0818835
-0 -0.0308404 0.0818835
-0 -0.0308404 -0.0821284
-0 0.0332406 -0.0821284
-numsurf 1
-SURF 0x0
-mat 1
-refs 4
-3 1.00067 0.999407
-0 4.45843e-005 0.999407
-1 4.45843e-005 0.000756443
-2 1.00067 0.000756443
 kids 0
 OBJECT poly
 name "MACHPNT"
@@ -408,4 +408,29 @@ refs 4
 3 0.98386 0.0105589
 2 0.98386 0.102508
 0 0.914898 0.102508
+kids 0
+OBJECT poly
+name "face"
+loc 0.00145734 0.00675381 -0.00391782
+data 10
+enginepane
+texture "apindicator.png"
+crease 30.000002
+numvert 6
+0 0.0209357 -0.0821284
+0 0.0332406 -0.0698235
+0 -0.0308404 -0.0821284
+0 -0.0308404 0.0818835
+0 0.0266556 0.0818835
+0 0.0332406 0.0752985
+numsurf 1
+SURF 0x0
+mat 1
+refs 6
+4 4.45843e-005 0.896785
+3 4.45843e-005 0.000756443
+2 1.00067 0.000756443
+0 1.00067 0.807646
+1 0.925599 0.999407
+5 0.0402192 0.999407
 kids 0

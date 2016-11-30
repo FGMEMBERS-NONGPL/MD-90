@@ -40,6 +40,9 @@ McDonnell Douglas MD-90
     <autopilot>
       <path>Aircraft/MD-90/Systems/it-autoflight.xml</path>
     </autopilot>
+    <autopilot>
+      <path>Aircraft/MD-90/Systems/it-autothrust.xml</path>
+    </autopilot>
     <property-rule n="101">
         <path>Aircraft/MD-90/Sounds/MD-90-sound-control.xml</path>
     </property-rule>
@@ -70,10 +73,8 @@ McDonnell Douglas MD-90
   <!-- Flap detents -->
   <flaps>
     <setting>0.00</setting>
-    <setting>0.125</setting> <!-- 5 deg -->
     <setting>0.275</setting> <!-- 11 deg (standard takeoff) -->
     <setting>0.375</setting> <!-- 15 deg (standard takeoff)-->
-    <setting>0.5</setting>   <!-- 20 deg -->
     <setting>0.7</setting>   <!-- 28 deg (standard landing) -->
     <setting>1.00</setting>  <!-- 40 deg (standard landing) -->
   </flaps>
@@ -159,14 +160,6 @@ For Manual Engine Start, see the checlists in the Help Menu.
             <script>MD90.eng_magicshutdown();</script>
           </binding>
         </item>
-		<item>
-			<name>retrofit</name>
-			<label>Toggle Retrofit</label>
-			<binding>
-				<command>property-toggle</command>
-				<property>/options/retrofit</property>
-			</binding>
-		</item>
         <item>
           <label>Livery Select</label>
           <binding>
@@ -298,6 +291,9 @@ For Manual Engine Start, see the checlists in the Help Menu.
       <float n="6" alias="/controls/flight/spoilers-pos-norm-left"/>
       <float n="7" alias="/controls/flight/spoilers-pos-norm-right"/>
       <float n="8" alias="/controls/flight/spoilers-pos-norm-ground"/>
+      <float n="9" alias="/controls/flight/aileron"/>
+      <float n="10" alias="/controls/flight/elevator"/>
+      <float n="11" alias="/controls/flight/elevator-trim"/>
       <int n="0" alias="/controls/lighting/beacon"/>
       <int n="1" alias="/controls/lighting/wingtipaft"/>
       <int n="2" alias="/controls/lighting/nav"/>
@@ -317,12 +313,30 @@ For Manual Engine Start, see the checlists in the Help Menu.
 
 </sim>
 
-
-<autopilot>
-  <locks>
-    <at-mode type="int">0</at-mode>
-  </locks>
-</autopilot>
+<it-autoflight>
+	<settings>
+		<no-generics>1</no-generics>
+		<roll>
+			<umin>-0.50</umin>
+			<umax>0.50</umax>
+			<kp>0.06</kp>
+			<kp-vorloc>0.08</kp-vorloc>
+		</roll>
+		<pitch>
+			<umin>-0.35</umin>
+			<umax>0.35</umax>
+			<kp>-0.09</kp>
+		</pitch>
+		<flch>
+			<umin>-0.30</umin>
+			<umax>0.30</umax>
+			<kp>-0.10</kp>
+		</flch>
+		<gs>
+			<kp>0.10</kp>
+		</gs>
+	</settings>
+</it-autoflight>
 
 <options>
   <retrofit type="bool">false</retrofit>

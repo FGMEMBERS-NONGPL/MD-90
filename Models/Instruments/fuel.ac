@@ -500,7 +500,7 @@ name "FuelC1"
 loc 0.000285 0 0
 data 8
 Mesh.023
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.00142803 0.010935
@@ -521,7 +521,7 @@ name "FuelC2"
 loc 0.000285 0 0
 data 8
 Mesh.024
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.00142803 0.003645
@@ -542,7 +542,7 @@ name "FuelC3"
 loc 0.000285 0 0
 data 8
 Mesh.025
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.00142803 -0.003645
@@ -563,7 +563,7 @@ name "FuelC4"
 loc 0.000285 0 0
 data 8
 Mesh.026
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.00142803 -0.010935
@@ -584,7 +584,7 @@ name "FuelC5"
 loc 0.000285 0 0
 data 8
 Mesh.021
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.00142803 -0.018225
@@ -605,7 +605,7 @@ name "FuelL1"
 loc 0.000285 0 0
 data 8
 Mesh.007
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 0.03159
@@ -626,7 +626,7 @@ name "FuelL2"
 loc 0.000285 0 0
 data 8
 Mesh.008
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 0.0243
@@ -647,7 +647,7 @@ name "FuelL3"
 loc 0.000285 0 0
 data 8
 Mesh.009
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 0.01701
@@ -668,7 +668,7 @@ name "FuelL4"
 loc 0.000285 0 0
 data 8
 Mesh.013
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 0.00972
@@ -689,7 +689,7 @@ name "FuelL5"
 loc 0.000285 0 0
 data 8
 Mesh.005
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 0.00243
@@ -710,7 +710,7 @@ name "FuelR1"
 loc 0.000285 0 0
 data 8
 Mesh.019
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 -0.00972
@@ -731,7 +731,7 @@ name "FuelR2"
 loc 0.000285 0 0
 data 8
 Mesh.018
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 -0.01701
@@ -752,7 +752,7 @@ name "FuelR3"
 loc 0.000285 0 0
 data 8
 Mesh.017
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 -0.0243
@@ -773,7 +773,7 @@ name "FuelR4"
 loc 0.000285 0 0
 data 8
 Mesh.015
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 -0.03159
@@ -794,7 +794,7 @@ name "FuelR5"
 loc 0.000285 0 0
 data 8
 Mesh.020
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 0.017628 -0.03888
@@ -815,7 +815,7 @@ name "FuelT1"
 loc 0.000285 0 0
 data 8
 Mesh.030
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.014772 0.010935
@@ -836,7 +836,7 @@ name "FuelT2"
 loc 0.000285 0 0
 data 8
 Mesh.029
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.014772 0.003645
@@ -857,7 +857,7 @@ name "FuelT3"
 loc 0.000285 0 0
 data 8
 Mesh.028
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.014772 -0.003645
@@ -878,7 +878,7 @@ name "FuelT4"
 loc 0.000285 0 0
 data 8
 Mesh.027
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.014772 -0.010935
@@ -899,7 +899,7 @@ name "FuelT5"
 loc 0.000285 0 0
 data 8
 Mesh.031
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.014772 -0.018225
@@ -920,7 +920,7 @@ name "Lbs1"
 loc 0.000285 0 0
 data 10
 Mesh.11277
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.030972 0.01458
@@ -941,7 +941,7 @@ name "Lbs2"
 loc 0.000285 0 0
 data 10
 Mesh.11278
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.030972 0.00729
@@ -962,7 +962,7 @@ name "Lbs3"
 loc 0.000285 0 0
 data 10
 Mesh.11279
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.030972 0
@@ -983,7 +983,7 @@ name "Lbs4"
 loc 0.000285 0 0
 data 10
 Mesh.11280
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.030972 -0.00729
@@ -1004,7 +1004,7 @@ name "Lbs5"
 loc 0.000285 0 0
 data 10
 Mesh.11276
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.030972 -0.01458
@@ -1025,7 +1025,7 @@ name "Lbs6"
 loc 0.000285 0 0
 data 10
 Mesh.11281
-texture "digits.rgb"
+texture "digitsg.rgb"
 crease 30.000000
 numvert 4
 0.00162 -0.030972 -0.02187

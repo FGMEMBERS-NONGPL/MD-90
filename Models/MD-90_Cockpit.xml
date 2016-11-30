@@ -69,6 +69,11 @@
 <object-name>YokeTrimR</object-name>
 <object-name>apoff</object-name>
 <object-name>apoff2</object-name>
+<object-name>PitchTrim</object-name>
+<object-name>AToffL</object-name>
+<object-name>AToffR</object-name>
+<object-name>AToffL1</object-name>
+<object-name>AToffR1</object-name>
 	
   <emission>
     <red>0.8</red>
@@ -78,19 +83,50 @@
   </emission>
 </animation>
 
-
 <animation>
   <type>pick</type>
   <object-name>apoff</object-name>
   <action>
     <button>0</button>
     <repeatable>false</repeatable>
-			<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/ap_mastersw</property>
-			<value>0</value>
-			</binding>
+	<binding>
+		<command>property-assign</command>
+		<property>/it-autoflight/ap_mastersw</property>
+		<value>0</value>
+	</binding>
+	<binding>
+		<command>property-assign</command>
+		<property>/it-autoflight/ap_mastersw2</property>
+		<value>0</value>
+	</binding>
+    <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/apoff</property>
+        <value>1</value>
+    </binding>
+    <mod-up>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/flight/apoff</property>
+            <value>0</value>
+        </binding>
+    </mod-up>
   </action>
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>apoff</object-name>
+  <property>controls/flight/apoff</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>-0.001</dep></entry>
+    <entry><ind>1</ind><dep> 0.001</dep></entry>
+  </interpolation>
+  <axis>
+    <x>-1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
 </animation>
 
 <animation>
@@ -99,14 +135,45 @@
   <action>
     <button>0</button>
     <repeatable>false</repeatable>
-			<binding>
-			<command>property-assign</command>
-			<property>/it-autoflight/ap_mastersw</property>
-			<value>0</value>
-			</binding>
+	<binding>
+		<command>property-assign</command>
+		<property>/it-autoflight/ap_mastersw</property>
+		<value>0</value>
+	</binding>
+	<binding>
+		<command>property-assign</command>
+		<property>/it-autoflight/ap_mastersw2</property>
+		<value>0</value>
+	</binding>
+    <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/apoff2</property>
+        <value>1</value>
+    </binding>
+    <mod-up>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/flight/apoff2</property>
+            <value>0</value>
+        </binding>
+    </mod-up>
   </action>
 </animation>
 
+<animation>
+  <type>translate</type>
+  <object-name>apoff2</object-name>
+  <property>controls/flight/apoff2</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>-0.001</dep></entry>
+    <entry><ind>1</ind><dep> 0.001</dep></entry>
+  </interpolation>
+  <axis>
+    <x>-1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
 
 
 <!-- Sub-Model Imports -->
@@ -119,14 +186,6 @@
 <model>
   <name>Instruments</name>
   <path>Aircraft/MD-90/Models/MD-90_Instruments.xml</path>
-</model>
-
-
-<!-- Hotspot Panels -->
-
-<model>
-  <name>2Dhotspots</name>
-  <path>Aircraft/MD-90/Models/MD-90_Panels.xml</path>
 </model>
 
 
@@ -183,6 +242,96 @@
   <object-name>KnobABS</object-name>
   <object-name>LampABS</object-name>
   <object-name>LampABSon</object-name>
+  <object-name>PitchTrim</object-name>
+  <object-name>AToffL</object-name>
+  <object-name>AToffR</object-name>
+  <object-name>AToffL1</object-name>
+  <object-name>AToffR1</object-name>
+</animation>
+
+<!-- Throttle AT Off -->
+<animation>
+  <type>pick</type>
+  <object-name>AToffL</object-name>
+  <object-name>AToffL1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>/it-autoflight/at_mastersw</property>
+	  <value>0</value>
+    </binding>
+    <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/atoff</property>
+        <value>1</value>
+    </binding>
+    <mod-up>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/flight/atoff</property>
+            <value>0</value>
+        </binding>
+    </mod-up>
+  </action>
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>AToffL</object-name>
+  <property>controls/flight/atoff</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>    0</dep></entry>
+    <entry><ind>1</ind><dep>0.002</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>AToffR</object-name>
+  <object-name>AToffR1</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>
+    <binding>
+      <command>property-assign</command>
+      <property>/it-autoflight/at_mastersw</property>
+	  <value>0</value>
+    </binding>
+    <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/atoff2</property>
+        <value>1</value>
+    </binding>
+    <mod-up>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/flight/atoff2</property>
+            <value>0</value>
+        </binding>
+    </mod-up>
+  </action>
+</animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>AToffR</object-name>
+  <property>controls/flight/atoff2</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>     0</dep></entry>
+    <entry><ind>1</ind><dep>-0.002</dep></entry>
+  </interpolation>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
 </animation>
 
 
@@ -239,14 +388,32 @@
 <animation>
   <type>rotate</type>
   <object-name>FlapLever</object-name>
+  <property>controls/flight/slats</property>
+  <interpolation>
+    <entry><ind>0</ind><dep>-20</dep></entry>
+    <entry><ind>1</ind><dep>  0</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.616</x-m>
+    <y-m>0</y-m>
+    <z-m>0.654</z-m>
+  </center>
+  <axis>
+    <x>0</x>
+    <y>1</y>
+    <z>0</z>
+  </axis>
+</animation> 
+<animation>
+  <type>rotate</type>
+  <object-name>FlapLever</object-name>
   <property>controls/flight/flaps</property>
   <interpolation>
-    <entry><ind>    0</ind><dep> 0</dep></entry>
-    <entry><ind>0.001</ind><dep>15</dep></entry>
-    <entry><ind>0.275</ind><dep>28</dep></entry>
-    <entry><ind>0.375</ind><dep>34</dep></entry>
-    <entry><ind>  0.7</ind><dep>47</dep></entry>
-    <entry><ind>    1</ind><dep>62</dep></entry>
+    <entry><ind>    0</ind><dep>22</dep></entry>
+    <entry><ind>0.275</ind><dep>34</dep></entry>
+    <entry><ind>0.375</ind><dep>40</dep></entry>
+    <entry><ind>  0.7</ind><dep>54</dep></entry>
+    <entry><ind>    1</ind><dep>66</dep></entry>
   </interpolation>   
   <center>
     <x-m>2.616</x-m>
@@ -303,10 +470,12 @@
   <type>rotate</type>
   <object-name>ThrottleL</object-name>
   <object-name>ThrottleRevL</object-name>
-  <property>controls/engines/engine[0]/throttle</property>
+  <object-name>AToffL</object-name>
+  <object-name>AToffL1</object-name>
+  <property>controls/engines/engine[0]/throttle-lever</property>
   <interpolation>
     <entry><ind>0</ind><dep> 0</dep></entry>
-    <entry><ind>1</ind><dep>45</dep></entry>
+    <entry><ind>1</ind><dep>55</dep></entry>
   </interpolation>   
   <center>
     <x-m>2.616</x-m>
@@ -323,10 +492,12 @@
   <type>rotate</type>
   <object-name>ThrottleR</object-name>
   <object-name>ThrottleRevR</object-name>
-  <property>controls/engines/engine[1]/throttle</property>
+  <object-name>AToffR</object-name>
+  <object-name>AToffR1</object-name>
+  <property>controls/engines/engine[1]/throttle-lever</property>
   <interpolation>
     <entry><ind>0</ind><dep> 0</dep></entry>
-    <entry><ind>1</ind><dep>45</dep></entry>
+    <entry><ind>1</ind><dep>55</dep></entry>
   </interpolation>   
   <center>
     <x-m>2.616</x-m>
@@ -346,7 +517,6 @@
   <object-name>ThrottleL</object-name>
   <object-name>ThrottleRevL</object-name>
   <action>
-    <button>0</button>
     <button>3</button>
     <repeatable>false</repeatable>
     <binding>
@@ -364,7 +534,6 @@
   <object-name>ThrottleL</object-name>
   <object-name>ThrottleRevL</object-name>
   <action>
-    <button>1</button>
     <button>4</button>
     <repeatable>false</repeatable>
     <binding>
@@ -382,7 +551,6 @@
   <object-name>ThrottleR</object-name>
   <object-name>ThrottleRevR</object-name>
   <action>
-    <button>0</button>
     <button>3</button>
     <repeatable>false</repeatable>
     <binding>
@@ -400,7 +568,6 @@
   <object-name>ThrottleR</object-name>
   <object-name>ThrottleRevR</object-name>
   <action>
-    <button>1</button>
     <button>4</button>
     <repeatable>false</repeatable>
     <binding>
@@ -453,6 +620,80 @@
     <z>0.0</z>
   </axis>
 </animation> 
+
+<!-- Pitch Trim Thing -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>PitchTrim</object-name>
+        <action>
+                <button>0</button>
+                <repeatable>true</repeatable>
+                <binding>
+                        <command>property-adjust</command>
+                        <property>/controls/flight/elevator-trim</property>
+                        <step>-0.01</step>
+                        <min>-0.8</min>
+                        <max>0.8</max>
+                </binding>
+                <binding>
+                        <command>property-assign</command>
+                        <property>/controls/flight/pitchtrimlever</property>
+                        <value>-1</value>
+                </binding>
+                <mod-up>
+                    <binding>
+                        <command>property-assign</command>
+                        <property>/controls/flight/pitchtrimlever</property>
+                        <value>0</value>
+                    </binding>
+                </mod-up>
+        </action>
+        <action>
+                <button>1</button>
+                <repeatable>true</repeatable>
+                <binding>
+                        <command>property-adjust</command>
+                        <property>/controls/flight/elevator-trim</property>
+                        <step>0.01</step>
+                        <min>-0.8</min>
+                        <max>0.8</max>
+                </binding>
+                <binding>
+                        <command>property-assign</command>
+                        <property>/controls/flight/pitchtrimlever</property>
+                        <value>1</value>
+                </binding>
+                <mod-up>
+                    <binding>
+                        <command>property-assign</command>
+                        <property>/controls/flight/pitchtrimlever</property>
+                        <value>0</value>
+                    </binding>
+                </mod-up>
+        </action>
+    </animation>
+	
+<animation>
+  <type>rotate</type>
+  <object-name>PitchTrim</object-name>
+  <property>/controls/flight/pitchtrimlever</property>
+  <interpolation>
+    <entry><ind>-1</ind><dep>-20</dep></entry>
+    <entry><ind> 0</ind><dep>  0</dep></entry>
+    <entry><ind> 1</ind><dep> 20</dep></entry>
+  </interpolation>   
+  <center>
+    <x-m>2.616</x-m>
+    <y-m>0</y-m>
+    <z-m>0.654</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
 
 <!-- Fuel Cutoff -->
 
@@ -929,7 +1170,7 @@
   <center>
     <x-m>0</x-m>
     <y-m>-0.500</y-m>
-    <z-m>0.856</z-m>
+    <z-m>0.8715</z-m>
   </center>
   <axis>
     <x>-1.0</x>
@@ -968,7 +1209,7 @@
   <center>
     <x-m>0.0</x-m>
     <y-m>0.500</y-m>
-    <z-m>0.856</z-m>
+    <z-m>0.8715</z-m>
   </center>
   <axis>
     <x>-1.0</x>
@@ -976,57 +1217,6 @@
     <z>0.0</z>
   </axis>
 </animation>
-
-<animation>
-        <type>rotate</type>
-        <object-name>Etrim</object-name>
-        <property>controls/flight/elevator-trim</property>
-        <factor>160.0</factor>
-        <center>
-            <x-m>2.63</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.64</z-m>
-        </center>
-        <axis>
-            <x>0.0</x>
-            <y>-1.0</y>
-            <z>0.0</z>
-        </axis>
-    </animation>
-
- <animation>
-        <type>pick</type>
-        <object-name>Etrim</object-name>
-        <action>
-            <button>3</button>
-            <repeatable>true</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/flight/elevator-trim</property>
-                <step>0.001</step>
-                <!--min>-8000</min>
-                <max>6000</max-->
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>Etrim</object-name>
-        <action>
-            <button>4</button>
-            <repeatable>true</repeatable>
-            <binding>
-            <command>property-adjust</command>
-            <property>controls/flight/elevator-trim</property>
-            <step>-0.001</step>
-            <!--min>-8000</min>
-            <max>6000</max-->
-            </binding>
-        </action>
-    </animation>
-
-
 
 </PropertyList>
 
