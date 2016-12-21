@@ -71,7 +71,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>FMA_L</name>
-  <path>Aircraft/MD-88/Models/Instruments/FMA/FMA.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/FMA/FMA.xml</path>
   <offsets>
     <x-m>2.210</x-m>
     <y-m>-0.330</y-m>
@@ -174,9 +174,6 @@ McDonnell Douglas MD-90
   <name>vsi</name>
   <path>Aircraft/MD-90/Models/Instruments/vsi.xml</path>
   <offsets>
-    <!--x-m>2.248</x-m>
-    <y-m>-0.390</y-m>
-    <z-m>0.766</z-m-->
 	<x-m>2.250</x-m>
     <y-m>-0.384</y-m>
     <z-m>0.7635</z-m>
@@ -211,7 +208,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>altbezel</name>
-  <path>Aircraft/MD-90/Models/Instruments/altimeter2.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/stby-bezel.xml</path>
   <offsets>
     <x-m>2.238</x-m>
     <y-m>-0.189</y-m>
@@ -233,7 +230,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>enginepanel</name>
-  <path>Aircraft/MD-90/Models/Instruments/enginepanel.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/eng/eng1.xml</path>
   <offsets>
     <x-m>2.230</x-m>
     <y-m>-0.066</y-m>
@@ -244,7 +241,7 @@ McDonnell Douglas MD-90
 
 <model>
   <name>enginepanel2</name>
-  <path>Aircraft/MD-90/Models/Instruments/enginepanel2.xml</path>
+  <path>Aircraft/MD-90/Models/Instruments/eng/eng2.xml</path>
   <offsets>
     <x-m>2.230</x-m>
     <y-m>0.06</y-m>

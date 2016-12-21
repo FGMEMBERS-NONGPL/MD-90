@@ -56,28 +56,6 @@ var lights_beacon_toggle = func {
 }
 
 
-								# AP/AT stuff: (will live elsewhere eventually)
-
-#autothrottle		= props.globals.getNode("/autopilot/locks/speed");
-#autothrottle_mode	= props.globals.getNode("/autopilot/locks/at-mode");
-#at_switch		= props.globals.getNode("/controls/switches/at");
-#var autothrottle_toggle = func {
-#  if (!autothrottle.getValue())	{
-#    at_switch.setValue(1);					# Set switch to on position
-#    if (autothrottle_mode.getValue() == 0) {			# AT mode 0 is speed
-#      autothrottle.setValue("speed-with-throttle");
-#    }
-#    else {							# At mode 1 is mach
-#      autothrottle.setValue("mach-with-throttle");
-#    }
-#  }
-#  else {
-#    autothrottle.setValue("");
-#    at_switch.setValue(0);
-#  }
-#}
-
-
 								# Establish which settings are saved on exit
 var MD90_Savedata = func {
   aircraft.data.add("/controls/lighting/digital-norm");		# Numeric readouts lighting
@@ -105,13 +83,12 @@ setlistener("/sim/signals/fdm-initialized", func {
   nd_init();					# See MD-90-efis.nas
   setprop("/engines/engine/oil-q", 14);
   setprop("/engines/engine[1]/oil-q", 13);
-  setprop("/controls/engines/eprlim", 1.42);
-  setprop("/controls/engines/eprlimx100", 142);
   var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-90/Systems/autopilot-dlg.xml");
-  setprop("/it-autoflight/settings/retard-enable", 1);  # Enable or disable automatic autothrottle retard.
-  setprop("/it-autoflight/settings/retard-ft", 20);     # Add this to change the retard altitude, default is 50ft AGL.
-  setprop("/it-autoflight/settings/land-flap", 0.7);    # Define the landing flaps here. This is needed for autoland, and retard.
-  setprop("/it-autoflight/settings/land-enable", 1);    # Enable or disable automatic landing.
+  setprop("/it-autoflight/settings/retard-enable", 1);   # Enable or disable automatic autothrottle retard.
+  setprop("/it-autoflight/settings/retard-ft", 30);      # Add this to change the retard altitude.
+  setprop("/it-autoflight/settings/land-flap", 0.7);     # Define the landing flaps here. This is needed for autoland, and retard.
+  setprop("/it-autoflight/settings/land-enable", 1);     # Enable or disable automatic landing.
+  setprop("/it-autoflight/autoland/flare-altitude", 20); # Altitude when the flare mode starts in an autoland.
   setlistener("engines/engine[0]/epr-actual", func {
     setprop("engines/engine[0]/epr-actualx100", (getprop("engines/engine[0]/epr-actual") * 100));
   });

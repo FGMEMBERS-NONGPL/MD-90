@@ -202,3 +202,7 @@ var InstrumentationInit = func {
   settimer(update_rmi, 2);				# Delay startup a bit to allow things to initialize
   settimer(update_comms, 2);				# Delay startup a bit to allow things to initialize
 }
+
+setlistener("/it-autoflight/input/spd-mach", func {
+	setprop("/it-autoflight/input/spd-mach-x100", getprop("/it-autoflight/input/spd-mach") * 100);
+});
