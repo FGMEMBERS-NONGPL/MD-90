@@ -27,7 +27,7 @@
   
   <apoff>
    <name>apoff3</name>
-   <path>/Aircraft/MD-88/Sounds/apoff.wav</path>
+   <path>/Aircraft/MD-90/Sounds/apoff.wav</path>
    <condition>
 	 <property>/systems/electrical/bus/dcL</property>
    </condition>
