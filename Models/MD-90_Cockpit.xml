@@ -726,10 +726,6 @@
       <command>property-toggle</command>
       <property>controls/engines/engine[0]/cutoff</property>
     </binding>
-    <binding> 
-      <command>nasal</command>
-      <script>MD90.eng_startup_2(0);</script>
-    </binding>
   </action>
 </animation>
 
@@ -761,10 +757,6 @@
     <binding>
       <command>property-toggle</command>
       <property>controls/engines/engine[1]/cutoff</property>
-    </binding>
-    <binding> 
-      <command>nasal</command>
-      <script>MD90.eng_startup_2(1);</script>
     </binding>
   </action>
 </animation>
@@ -880,7 +872,7 @@
     <repeatable>false</repeatable>
     <binding> 
         <command>nasal</command>
-        <script>MD90.spoiler_arm();</script>
+        <script>MD88.spoiler_arm();</script>
       </binding>
   </action>
 </animation>
@@ -892,7 +884,7 @@
     <repeatable>false</repeatable>
     <binding> 
         <command>nasal</command>
-        <script>MD90.spoiler_disarm();</script>
+        <script>MD88.spoiler_disarm();</script>
       </binding>
   </action>
 </animation>
@@ -996,7 +988,7 @@
     </binding>
     <binding> 
       <command>nasal</command>
-      <script>MD90.abs_arm();</script>
+      <script>MD88.abs_arm();</script>
     </binding>
   </action>
 </animation>
