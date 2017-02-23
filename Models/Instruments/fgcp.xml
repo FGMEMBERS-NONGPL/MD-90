@@ -566,7 +566,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
-      <script>MD90.lights_beacon_toggle();</script>
+      <script>MD88.lights_beacon_toggle();</script>
     </binding>
   </action>
 </animation>
@@ -598,7 +598,7 @@
     <repeatable>false</repeatable>
     <binding>
       <command>nasal</command>
-      <script>MD90.lights_nav_toggle();</script>
+      <script>MD88.lights_nav_toggle();</script>
     </binding>
   </action>
 </animation>
