@@ -119,9 +119,6 @@
 			<property>MD80/engine/MDA_WHN_4</property>
 		</volume>
 		<volume>
-			<property>MD80/misc/buzz-z</property>
-		</volume>
-		<volume>
 			<property>sim/current-view/internal</property>
 		</volume>
 		<volume>
@@ -140,9 +137,6 @@
 		<property>engines/engine[0]/n1</property>
 		<volume>
 			<property>MD80/engine/MDA_WHN_5</property>
-		</volume>
-		<volume>
-			<property>MD80/misc/buzz-z</property>
 		</volume>
 		<volume>
 			<property>sim/current-view/internal</property>
@@ -236,9 +230,6 @@
 			<property>MD80/engine/MDB_WHN_4</property>
 		</volume>
 		<volume>
-			<property>MD80/misc/buzz-z</property>
-		</volume>
-		<volume>
 			<property>sim/current-view/internal</property>
 		</volume>
 		<pitch>
@@ -254,9 +245,6 @@
 		<property>engines/engine[1]/n1</property>
 		<volume>
 			<property>MD80/engine/MDB_WHN_5</property>
-		</volume>
-		<volume>
-			<property>MD80/misc/buzz-z</property>
 		</volume>
 		<volume>
 			<property>sim/current-view/internal</property>

@@ -6,7 +6,7 @@ McDonnell Douglas MD-90
 <PropertyList>
 
 <sim include="Systems/MD-90-views.xml">
-  <description>McDonnell Douglas MD-90</description>
+  <description>McDonnell Douglas MD-90 (EFD Flightdeck)</description>
   <author>Joshua Davidson (it0uchpods/411), Martien van der P (exterior model)</author>
 	<status>0.0.5</status>
 	<aircraft-version>V0.0.5</aircraft-version>
@@ -272,7 +272,7 @@ For Manual Engine Start, see the checlists in the Help Menu.
 
 <options>
   <retrofit type="bool">true</retrofit>
-  <efd_cockpit type="bool">false</efd_cockpit>
+  <efd_cockpit type="bool">true</efd_cockpit>
 </options>
 
 <!--
@@ -414,6 +414,7 @@ State: off (0), startup stage 1 (1), startup stage 2 (2), running (3), shutdown 
     <file>Aircraft/MD-90/Nasal/tyresmoke.nas</file>
 	<file>Aircraft/MD-90/Models/Instruments/ND/ND.nas</file>
 	<file>Aircraft/MD-90/Nasal/MD-90-efis.nas</file>
+	<file>Aircraft/MD-90/Nasal/PFD_FMA.nas</file>
   </MD88>
   <acconfig>
 	<file>Aircraft/MD-90/AircraftConfig/acconfig.nas</file>
