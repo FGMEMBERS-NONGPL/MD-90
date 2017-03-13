@@ -1432,7 +1432,7 @@
         <format type="string">%03.0f</format>
         <property>/it-autoflight/internal/alt</property>
         <font>helvetica_bold.txf</font>
-        <character-size>0.0095</character-size>
+        <character-size>0.008</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
         <font-resolution>
             <width type="int">32</width>
