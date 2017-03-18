@@ -13,7 +13,7 @@ setlistener("/it-autoflight/mode/lat", func {
   } else if (lat == "ALGN") {
 	setprop("/modes/pfd/fma/roll-mode", "ALIGN");
   } else if (lat == "T/O") {
-	setprop("/modes/pfd/fma/roll-mode", "TAKEOFF");
+	setprop("/modes/pfd/fma/roll-mode", "    TAKEOFF");
   }
 });
 
@@ -23,7 +23,7 @@ setlistener("/it-autoflight/mode/vert", func {
   if (vert == "ALT HLD") {
 	setprop("/modes/pfd/fma/pitch-mode", "HOLD");
   } else if (vert == "ALT CAP") {
-	setprop("/modes/pfd/fma/pitch-mode", "CAPTURE");
+	setprop("/modes/pfd/fma/pitch-mode", "HOLD");
   } else if (vert == "V/S") {
 	setprop("/modes/pfd/fma/pitch-mode", "V/S");
   } else if (vert == "G/S") {
@@ -39,7 +39,7 @@ setlistener("/it-autoflight/mode/vert", func {
   } else if (vert == "FLARE") {
 	setprop("/modes/pfd/fma/pitch-mode", "FLARE");
   } else if (vert == "T/O CLB") {
-	setprop("/modes/pfd/fma/pitch-mode", "T/O THRUST");
+	setprop("/modes/pfd/fma/pitch-mode", "T/O CLAMP");
   } else if (vert == "G/A CLB") {
 	setprop("/modes/pfd/fma/pitch-mode", "G/A THRUST");
   }
