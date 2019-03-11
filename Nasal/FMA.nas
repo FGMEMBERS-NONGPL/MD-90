@@ -59,9 +59,6 @@ setlistener("/it-autoflight/mode/vert", func {
 	} else if (vert == "FPA") {
 		setprop("/FMA/pitch", "FPA");
 		setprop("/FMA/pitch2", "TRK");
-	} else if (vert == "LAND") {
-		setprop("/FMA/pitch", "AUT");
-		setprop("/FMA/pitch2", "LND");
 	} else if (vert == "FLARE") {
 		setprop("/FMA/pitch", "FLAR");
 		setprop("/FMA/pitch2", " ");
@@ -73,39 +70,6 @@ setlistener("/it-autoflight/mode/vert", func {
 		setprop("/FMA/pitch2", " ");
 	}
 });
-
-# Master VNAV
-setlistener("/it-autoflight/mode/prof", func {
-	var prof = getprop("/it-autoflight/mode/prof");
-	if (prof == "VNAV HLD") {
-		setprop("/FMA/pitch", "VNAV");
-		setprop("/FMA/pitch2", "HLD");
-	} else if (prof == "VNAV CAP") {
-		setprop("/FMA/pitch", "VNAV");
-		setprop("/FMA/pitch2", "CAP");
-	} else if (prof == "VNAV SPD") {
-		vnav_clbdes();
-	} else if (prof == "VNAV PTH") {
-		vnav_clbdes();
-	}
-});
-
-var vnav_clbdes = func {
-	var vert = getprop("/it-autoflight/output/vert");
-	if (vert == 8) {
-		var prof = getprop("/it-autoflight/internal/prof-mode");
-		if (prof == "XX") {
-			# Do nothing
-		} else if (prof == "DES") {
-			setprop("/FMA/pitch", "VNAV");
-			setprop("/FMA/pitch2", "DES");
-		} else if (prof == "CLB") {
-			setprop("/FMA/pitch", "VNAV");
-			setprop("/FMA/pitch2", "CLB");
-
-		}
-	}
-}
 
 var arm = func {
 	var loc = getprop("/it-autoflight/output/loc-armed");

@@ -34,8 +34,6 @@ setlistener("/it-autoflight/mode/vert", func {
 		setprop("/modes/pfd/fma/pitch-mode", "IDLE THRUST");
 	} else if (vert == "FPA") {
 		setprop("/modes/pfd/fma/pitch-mode", "FPA");
-	} else if (vert == "LAND") {
-		setprop("/modes/pfd/fma/pitch-mode", "G/S");
 	} else if (vert == "FLARE") {
 		setprop("/modes/pfd/fma/pitch-mode", "FLARE");
 	} else if (vert == "T/O CLB") {
@@ -44,34 +42,6 @@ setlistener("/it-autoflight/mode/vert", func {
 		setprop("/modes/pfd/fma/pitch-mode", "G/A THRUST");
 	}
 });
-
-# Master VNAV
-setlistener("/it-autoflight/mode/prof", func {
-	var prof = getprop("/it-autoflight/mode/prof");
-	if (prof == "VNAV HLD") {
-		setprop("/modes/pfd/fma/pitch-mode", "HOLD");
-	} else if (prof == "VNAV CAP") {
-		setprop("/modes/pfd/fma/pitch-mode", "HOLD");
-	} else if (prof == "VNAV SPD") {
-		vnav_clbdes();
-	} else if (prof == "VNAV PTH") {
-		vnav_clbdes();
-	}
-});
-
-var vnav_clbdes = func {
-	var vert = getprop("/it-autoflight/output/vert");
-	if (vert == 8) {
-		var prof = getprop("/it-autoflight/internal/prof-mode");
-		if (prof == "XX") {
-			# Do nothing
-		} else if (prof == "DES") {
-			setprop("/modes/pfd/fma/pitch-mode", "IDLE THRUST");
-		} else if (prof == "CLB") {
-			setprop("/modes/pfd/fma/pitch-mode", "CLB THRUST");
-		}
-	}
-}
 
 # Arm LOC
 setlistener("/it-autoflight/output/loc-armed", func {
