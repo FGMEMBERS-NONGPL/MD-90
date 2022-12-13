@@ -7,7 +7,7 @@ McDonnell Douglas MD-90
 
 <sim include="Systems/MD-90-views.xml">
   <description>McDonnell Douglas MD-90 (EFD Flightdeck)</description>
-  <author>Joshua Davidson (it0uchpods/411), Martien van der P (exterior model)</author>
+  <author>Joshua Davidson (Octal450/411), Martien van der P (exterior model)</author>
 	<status>0.0.5</status>
 	<aircraft-version>V0.0.5</aircraft-version>
 	<rating>
