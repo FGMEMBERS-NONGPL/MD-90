@@ -213,22 +213,6 @@
 			<hrule/>
 			
 			<checkbox>
-				<label>EFIS Displays</label>
-				<halign>left</halign>
-				<property>/options/retrofit</property>
-				<enable>
-					<equals>
-						<property>/sim/aero</property>
-						<value>MD-82-yasim</value>
-					</equals>
-				</enable>
-				<binding>
-					<command>dialog-apply</command>
-				</binding>
-				<live>true</live>
-			</checkbox>
-			
-			<checkbox>
 				<label>Skip IRS alignment</label>
 				<halign>left</halign>
 				<property>/systems/unused/unusedthing</property>
