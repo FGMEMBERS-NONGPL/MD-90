@@ -12,8 +12,8 @@
 </gear>
 
 <engines>
-  <kp>0.03</kp>
-  <kp-spd>0.12</kp-spd>
+  <kp>0.02</kp>
+  <kp-spd>0.25</kp-spd>
   <epr-roc-thr>10</epr-roc-thr>
   <epr-roc-pitch>3</epr-roc-pitch>
   <epr-roc-retard>10</epr-roc-retard>
